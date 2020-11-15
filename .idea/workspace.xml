@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand />
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea95ac5-aaac-4217-a9bc-7d6370ca8b09" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/lingobytes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lingobytes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_12_195715_create_teachers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_195715_create_teachers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_12_195844_create_students_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_195844_create_students_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_12_195902_create_courses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_195902_create_courses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_12_200128_create_course_student_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_200128_create_course_student_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_12_200158_create_register_payment_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_200158_create_register_payment_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_12_200302_create_question_student_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_200302_create_question_student_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +151,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/laravel/homestead" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kCLy6qe50tvYiIIZuvnSnZnkdP" />
@@ -168,8 +182,17 @@
       <updated>1605199881341</updated>
       <workItem from="1605199882751" duration="5519000" />
       <workItem from="1605297001236" duration="3454000" />
-      <workItem from="1605386615834" duration="1669000" />
+      <workItem from="1605386615834" duration="2434000" />
+      <workItem from="1605427609792" duration="10944000" />
     </task>
+    <task id="LOCAL-00001" summary="Developement 11/14/2020&#10;- initial Migrations are created. &#10;- initial relation between migrations are done">
+      <created>1605388403560</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605388403560</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +235,15 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Developement 11/14/2020&#10;- initial Migrations are created. &#10;- initial relation between migrations are done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Developement 11/14/2020&#10;- initial Migrations are created. &#10;- initial relation between migrations are done" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="-1335" y="603" key="CommitChangelistDialog2" timestamp="1605388402855">
+      <screen x="-1920" y="522" width="1920" height="1040" />
+    </state>
+    <state x="-1335" y="603" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605388402855" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1605211419687">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
@@ -229,17 +260,17 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605211419687" />
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1605201994844">
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1605388449941">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605201994844" />
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605388449941" />
     <state x="-1227" y="942" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1605201518605">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1227" y="942" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605201518605" />
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1605387711302">
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1605437696447">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605387711302" />
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605437696447" />
   </component>
 </project>

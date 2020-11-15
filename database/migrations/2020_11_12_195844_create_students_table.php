@@ -15,7 +15,7 @@ class CreateStudentsTable extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('student_id');
+            $table->foreignId('user_id');
             $table->string('level');  //can be enum
             //last status
             $table->integer('age');
@@ -24,7 +24,7 @@ class CreateStudentsTable extends Migration
             $table->integer('verify_code');
             $table->timestamps();
 
-            $table->foreign('student_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

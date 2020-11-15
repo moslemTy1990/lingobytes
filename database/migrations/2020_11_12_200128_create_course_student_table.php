@@ -21,7 +21,7 @@ class CreateCourseStudentTable extends Migration
             $table->enum('status',['init','succeed','failed','removed'])->default('init');
 
             $table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');
-            $table->foreign('student_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
 
             $table->timestamps();
         });
