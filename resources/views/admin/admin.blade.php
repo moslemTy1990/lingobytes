@@ -23,7 +23,7 @@
     <!-- Daterange picker -->
     <link rel="stylesheet" href="{{asset('css/daterangepicker.css')}}">
     <!-- summernote -->
-    <link rel="stylesheet" href="{{asset('css/summernote-bs4.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/summernote-bs4.css')}}">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -71,7 +71,7 @@
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="{{asset('img/user1-128x128.jpg')}}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                            <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
                                     Brad Diesel
@@ -87,7 +87,7 @@
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="{{asset('img/user8-128x128.jpg')}}" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                            <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
                                     John Pierce
@@ -103,7 +103,7 @@
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="{{asset('img/user3-128x128.jpg')}}" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                            <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
                                     Nora Silvester
@@ -157,12 +157,12 @@
             </li>
         </ul>
     </nav>
-    <!-- /.navbar -->
+    <!-- /a.navbar -->
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
         <a href="index3.html" class="brand-link">
-            <img src="{{asset('img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+            <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
                  style="opacity: .8">
             <span class="brand-text font-weight-light">Admin</span>
         </a>
@@ -171,7 +171,7 @@
             <!-- Sidebar user panel (optional) -->
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="image">
-                    <img src="{{asset('img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
+                    <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                 </div>
                 <div class="info">
                     <a href="#" class="d-block">Moslem Teymoori</a>
@@ -714,6 +714,8 @@
 <script src="{{asset('js/Chart.min.js')}}"></script>
 <!-- Sparkline -->
 <script src="{{asset('js/sparkline.js')}}"></script>
+<!-- JQVMap -->
+<script src="{{asset('js/jquery.vmap.min.js')}}"></script>
 <!-- jQuery Knob Chart -->
 <script src="{{asset('js/jquery.knob.min.js')}}"></script>
 <!-- daterangepicker -->
@@ -726,7 +728,7 @@
 <!-- overlayScrollbars -->
 <script src="{{asset('js/jquery.overlayScrollbars.min.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="{{asset('js/adminlte.min.js')}}"></script>
+<script src="{{asset('js/adminlte.js')}}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{asset('js/dashboard.js')}}"></script>
 <!-- AdminLTE for demo purposes -->

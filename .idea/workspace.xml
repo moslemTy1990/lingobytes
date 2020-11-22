@@ -8,42 +8,45 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ea95ac5-aaac-4217-a9bc-7d6370ca8b09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/OverlayScrollbars.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/adminlte.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/daterangepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/icheck-bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/jqvmap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/summernote-bs4.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/tempusdominus-bootstrap-4.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/user1-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/user8-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/Chart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/adminlte.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/daterangepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.knob.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.overlayScrollbars.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/moment.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/sparkline.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/summernote-bs4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/tempusdominus-bootstrap-4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin.blade.php" afterDir="false" />
+    <list default="true" id="7ea95ac5-aaac-4217-a9bc-7d6370ca8b09" name="Default Changelist" comment="Developement 11/19/2020&#10;- added admin panel&#10;- setting up admin css and js and img files">
+      <change afterPath="$PROJECT_DIR$/public/css/OverlayScrollbars.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/icheck-bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/jqvmap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/summernote-bs4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/tempusdominus-bootstrap-4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/Chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/adminlte.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/adminlte.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/adminlte.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.vmap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.vmap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/summernote-bs4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/summernote-bs4.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/summernote-bs4.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/tempusdominus-bootstrap-4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_provision" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_provision" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_set_name" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_set_name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/box_meta" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/box_meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/id" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/id" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/index_uuid" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/index_uuid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/private_key" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/private_key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,6 +183,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kCLy6qe50tvYiIIZuvnSnZnkdP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -187,7 +193,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -197,18 +203,26 @@
       <recent name="C:\laragon\www\lingobytes\public\css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\lingobytes\public\img" />
-      <recent name="C:\laragon\www\lingobytes\public\Images" />
+      <recent name="C:\laragon\www\lingobytes\public\css" />
       <recent name="C:\laragon\www\lingobytes\public\js" />
       <recent name="C:\laragon\www\lingobytes\resources\js" />
-      <recent name="C:\laragon\www\lingobytes\public\css" />
+      <recent name="C:\laragon\www\lingobytes\public\webfonts" />
+      <recent name="C:\laragon\www\lingobytes\public\webfont" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.login.blade.php">
+    <configuration name="login.blade.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/lingobytes/resources/views/admin/login.blade.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.login.blade.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -224,7 +238,10 @@
       <workItem from="1605427609792" duration="10944000" />
       <workItem from="1605447145949" duration="153000" />
       <workItem from="1605447888557" duration="26439000" />
-      <workItem from="1605774063474" duration="5951000" />
+      <workItem from="1605774063474" duration="6430000" />
+      <workItem from="1605890108787" duration="11405000" />
+      <workItem from="1606047519190" duration="1671000" />
+      <workItem from="1606064226402" duration="6393000" />
     </task>
     <task id="LOCAL-00001" summary="Developement 11/14/2020&#10;- initial Migrations are created. &#10;- initial relation between migrations are done">
       <created>1605388403560</created>
@@ -240,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605447242269</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Developement 11/19/2020&#10;- added admin panel&#10;- setting up admin css and js and img files">
+      <created>1605816935684</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605816935684</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,13 +310,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Developement 11/14/2020&#10;- initial Migrations are created. &#10;- initial relation between migrations are done" />
     <MESSAGE value="Developement 11/15/2020&#10;- Migration relation change&#10;- Vagrant and host name url set up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Developement 11/15/2020&#10;- Migration relation change&#10;- Vagrant and host name url set up" />
+    <MESSAGE value="Developement 11/19/2020&#10;- added admin panel&#10;- setting up admin css and js and img files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Developement 11/19/2020&#10;- added admin panel&#10;- setting up admin css and js and img files" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1335" y="603" key="CommitChangelistDialog2" timestamp="1605447241033">
+    <state x="-1335" y="603" key="CommitChangelistDialog2" timestamp="1605816957054">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1335" y="603" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605447241033" />
+    <state x="-1335" y="603" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605816957054" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1605211419687">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
@@ -309,10 +334,10 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605211419687" />
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1605447256824">
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1605816972675">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605447256824" />
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605816972675" />
     <state x="-1253" y="641" width="585" height="801" key="find.popup" timestamp="1605564243097">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
@@ -325,10 +350,10 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1304" y="501" key="run.anything.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605563861659" />
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1605816385714">
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1605989068515">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605816385714" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1605637310837" />
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605989068515" />
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1605979921890" />
   </component>
 </project>
