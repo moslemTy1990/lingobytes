@@ -151,7 +151,7 @@
 
             <!-- Sign Out -->
             <li class="nav-item">
-                <a class="nav-link" href="#" role="button">
+                <a class="nav-link" href="{{route('admin-logout')}}" role="button">
                     Sign out
                 </a>
             </li>
@@ -692,10 +692,10 @@
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-        <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+        <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">Admin Page </a>.</strong>
         All rights reserved.
         <div class="float-right d-none d-sm-inline-block">
-            <b>Version</b> 3.0.5
+            <b>Live time maybe</b>
         </div>
     </footer>
 </div>
@@ -714,8 +714,6 @@
 <script src="{{asset('js/Chart.min.js')}}"></script>
 <!-- Sparkline -->
 <script src="{{asset('js/sparkline.js')}}"></script>
-<!-- JQVMap -->
-{{--<script src="{{asset('js/jquery.vmap.min.js')}}"></script>--}}
 <!-- jQuery Knob Chart -->
 <script src="{{asset('js/jquery.knob.min.js')}}"></script>
 <!-- daterangepicker -->

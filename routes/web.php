@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,13 +18,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
    return view('welcome');
 });
-Route::get('/admin', function () {
-    return view('admin.admin');
-});
 
-Route::get('/admin-login', function () {
-    return view('admin.login');
-});
+
+
+//admin routes
+Route::get('/admin-login', [AdminController::class, 'index'])->name('admin-login');
+Route::Post('/admin', [AdminController::class,'show'])->name('admin-page');
+Route::get('/admin/logout', [AdminController::class,'destroy'])->name('admin-logout');
+
+
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             'family'=>'teymoori',
             'email' => 'm@gmail.com',
             'password' => Hash::make('Moslem1200034635'),
-            'role' => 'teacher'
+            'role' => 'admin'
         ]);
     }
 }
