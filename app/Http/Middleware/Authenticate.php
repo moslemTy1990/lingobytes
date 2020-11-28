@@ -5,10 +5,6 @@ namespace App\Http\Middleware;
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
 use Illuminate\Http\Request;
 
-use Closure;
-use Illuminate\Auth\AuthenticationException;
-use Illuminate\Contracts\Auth\Factory as Auth;
-use Illuminate\Contracts\Auth\Middleware\AuthenticatesRequests;
 
 class Authenticate extends Middleware
 {
@@ -23,5 +19,29 @@ class Authenticate extends Middleware
         if (! $request->expectsJson()) {
             return route('login');
         }
+    }
+    /**
+     * Determine if the user is logged in to any of the given guards.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  array  $guards
+     * @return void
+     *
+     * @throws \Illuminate\Auth\AuthenticationException
+     */
+    protected function authenticate($request, array $guards)
+    {
+        if (empty($guards)) {
+            $guards = [null];
+        }
+
+        foreach ($guards as $guard) {
+            //TODO ENUM
+            if ($this->auth->guard($guard)->check() && $this->auth->guard($guard)->user()->role=='student') {
+                return $this->auth->shouldUse($guard);
+            }
+        }
+
+        $this->unauthenticated($request, $guards);
     }
 }

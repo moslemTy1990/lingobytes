@@ -11,7 +11,7 @@ class AdminController extends Controller
        return view('admin.login');
     }
 
-    public function show(Request $request){
+    public function checkAdmin(Request $request){
         if (Auth::attempt(['email' => $request['email'], 'password' => $request['password'], 'role' => 'admin'])) {
             return view('admin.admin');
         }
@@ -23,5 +23,8 @@ class AdminController extends Controller
             Auth::logout();
         }
         return redirect()->route('admin-login');
+    }
+    public function show(){
+        return view('admin.admin');
     }
 }

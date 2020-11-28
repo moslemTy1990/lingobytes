@@ -17,8 +17,8 @@ class AdminMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-      // dd($request);
-        if(auth()->user()->role == 'admin'){
+      // TODO ENUM
+        if(auth()->user() && auth()->user()->role == 'admin'){
             return $next($request);
         }
         return redirect('admin-login');

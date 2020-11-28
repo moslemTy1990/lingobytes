@@ -10,13 +10,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7ea95ac5-aaac-4217-a9bc-7d6370ca8b09" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,7 +210,7 @@
       <workItem from="1605890108787" duration="11405000" />
       <workItem from="1606047519190" duration="1671000" />
       <workItem from="1606064226402" duration="13625000" />
-      <workItem from="1606246963519" duration="27063000" />
+      <workItem from="1606246963519" duration="32762000" />
     </task>
     <task id="LOCAL-00001" summary="Developement 11/14/2020&#10;- initial Migrations are created. &#10;- initial relation between migrations are done">
       <created>1605388403560</created>
@@ -250,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606165105620</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Developement 11/26/2020&#10;- admin login cridentials&#10;- admin log out and controller">
+      <created>1606420856557</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606420856558</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +303,8 @@
     <MESSAGE value="Developement 11/19/2020&#10;- added admin panel&#10;- setting up admin css and js and img files" />
     <MESSAGE value="Developement 11/22/2020&#10;- fixed admin pannel&#10;- fixed Vagrant&#10;- fixed the icone" />
     <MESSAGE value="Developement 11/23/2020&#10;- fixed admin pannel&#10;- fixed Font&#10;- fixed Dashboard js files&#10;--Admin paged completely working as a demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Developement 11/23/2020&#10;- fixed admin pannel&#10;- fixed Font&#10;- fixed Dashboard js files&#10;--Admin paged completely working as a demo" />
+    <MESSAGE value="Developement 11/26/2020&#10;- admin login cridentials&#10;- admin log out and controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Developement 11/26/2020&#10;- admin login cridentials&#10;- admin log out and controller" />
   </component>
   <component name="WindowStateProjectService">
     <state x="460" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606418832337">
@@ -307,10 +312,10 @@
     </state>
     <state x="-1230" y="795" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606249069784" />
     <state x="460" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606418832337" />
-    <state x="-1335" y="585" key="CommitChangelistDialog2" timestamp="1606165104782">
+    <state x="-1335" y="552" key="CommitChangelistDialog2" timestamp="1606420855895">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1335" y="585" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606165104782" />
+    <state x="-1335" y="552" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606420855895" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1605211419687">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
@@ -335,6 +340,10 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606165170283" />
+    <state x="411" y="148" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1606578986989">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="411" y="148" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1606578986989" />
     <state x="-1828" y="614" width="1736" height="856" key="dock-window-1" timestamp="1606336469526">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
@@ -351,10 +360,10 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1304" y="501" key="run.anything.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605563861659" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1606420366772">
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1606578921282">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606417617795" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1606420366772" />
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606577824856" />
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1606578921282" />
   </component>
 </project>

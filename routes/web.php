@@ -23,8 +23,10 @@ Route::get('/', function () {
 
 //admin routes
 Route::get('/admin-login', [AdminController::class, 'index'])->name('admin-login');
-Route::Post('/admin', [AdminController::class,'show'])->name('admin-page');
+Route::Post('/admin', [AdminController::class,'checkAdmin'])->name('admin-page');
+Route::get('/admin', [AdminController::class,'show'])->name('admin-dashboard')->middleware('admin');
 Route::get('/admin/logout', [AdminController::class,'destroy'])->name('admin-logout');
+
 
 
 
