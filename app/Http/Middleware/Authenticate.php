@@ -36,7 +36,7 @@ class Authenticate extends Middleware
         }
 
         foreach ($guards as $guard) {
-            //TODO ENUM
+            //TODO ENUMlogin
             if ($this->auth->guard($guard)->check() && $this->auth->guard($guard)->user()->role=='student') {
                 return $this->auth->shouldUse($guard);
             }

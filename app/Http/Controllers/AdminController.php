@@ -13,7 +13,7 @@ class AdminController extends Controller
 
     public function checkAdmin(Request $request){
         if (Auth::attempt(['email' => $request['email'], 'password' => $request['password'], 'role' => 'admin'])) {
-            return view('admin.admin');
+            return view('admin.main-dashboard');
         }
         return redirect()->route('admin-login')->withErrors(['Wrong Credentials.']);
     }
@@ -24,7 +24,8 @@ class AdminController extends Controller
         }
         return redirect()->route('admin-login');
     }
+
     public function show(){
-        return view('admin.admin');
+        return view('admin.main-dashboard');
     }
 }
