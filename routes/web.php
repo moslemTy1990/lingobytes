@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\TeacherController;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,23 +16,25 @@ use Illuminate\Support\Facades\Route;
 |w
 */
 
-Route::get('/', function () {
-   return view('welcome');
-});
-
-
+Route::get('/', function () {  return view('welcome'); });
 
 //admin routes
-Route::get('/admin-login', [AdminController::class, 'index'])->name('admin-login');
-Route::Post('/admin', [AdminController::class,'checkAdmin'])->name('admin-page');
-Route::get('/admin', [AdminController::class,'show'])->name('admin-dashboard')->middleware('admin');
-Route::get('/admin/logout', [AdminController::class,'destroy'])->name('admin-logout');
-
-
-
-
+Route::prefix('admin')->group(base_path('routes/Admin/admin-routes.php'));
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+//TODO
+/*
+ * GUEST middleware for admin
+ * CSRF for loqout
+ * Teacher Registration
+ * Web Pack
+ * ENUM creation for user types
+ * TokenBased Auth
+ *
+ *
+ * */

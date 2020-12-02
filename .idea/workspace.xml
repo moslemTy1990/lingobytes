@@ -9,22 +9,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea95ac5-aaac-4217-a9bc-7d6370ca8b09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin-layout/Main-content-area.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin-layout/admin-footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin-layout/admin-login-layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin-layout/admin-navbar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin-layout/admin-sidebar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin-layout/main-Layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/main-dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/student.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/teacher.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/Admin/admin-routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_provision" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_provision" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_set_name" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_set_name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/id" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/id" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/index_uuid" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/index_uuid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/private_key" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/private_key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vagrantfile" beforeDir="false" afterPath="$PROJECT_DIR$/Vagrantfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-layout/admin-navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-layout/admin-navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-layout/admin-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-layout/admin-sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,21 +175,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/webfonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/pages" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\lingobytes\public\js" />
-      <recent name="C:\laragon\www\lingobytes\public\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\lingobytes\resources\views\admin\pages" />
       <recent name="C:\laragon\www\lingobytes\public\webfonts" />
       <recent name="C:\laragon\www\lingobytes\public\css" />
       <recent name="C:\laragon\www\lingobytes\public\js" />
       <recent name="C:\laragon\www\lingobytes\resources\js" />
-      <recent name="C:\laragon\www\lingobytes\public\webfont" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\lingobytes\resources\views\admin\admin-dashboard-pages" />
+      <recent name="C:\laragon\www\lingobytes\public\js" />
+      <recent name="C:\laragon\www\lingobytes\public\css" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.login.blade.php">
@@ -221,7 +226,10 @@
       <workItem from="1606047519190" duration="1671000" />
       <workItem from="1606064226402" duration="13625000" />
       <workItem from="1606246963519" duration="35431000" />
-      <workItem from="1606648385512" duration="6721000" />
+      <workItem from="1606648385512" duration="7947000" />
+      <workItem from="1606726839544" duration="609000" />
+      <workItem from="1606729085408" duration="356000" />
+      <workItem from="1606730335985" duration="24830000" />
     </task>
     <task id="LOCAL-00001" summary="Developement 11/14/2020&#10;- initial Migrations are created. &#10;- initial relation between migrations are done">
       <created>1605388403560</created>
@@ -272,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606586463997</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Developement 11/29/2020&#10;- seprated diffrent pards of the admin part in seprate files to be more organized.">
+      <created>1606682710327</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606682710327</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,22 +338,23 @@
     <MESSAGE value="Developement 11/23/2020&#10;- fixed admin pannel&#10;- fixed Font&#10;- fixed Dashboard js files&#10;--Admin paged completely working as a demo" />
     <MESSAGE value="Developement 11/26/2020&#10;- admin login cridentials&#10;- admin log out and controller" />
     <MESSAGE value="Developement 11/28/2020&#10;- admin login seprated&#10;- student login seprated&#10;- admin login and student login are functioning correctly." />
-    <option name="LAST_COMMIT_MESSAGE" value="Developement 11/28/2020&#10;- admin login seprated&#10;- student login seprated&#10;- admin login and student login are functioning correctly." />
+    <MESSAGE value="Developement 11/29/2020&#10;- seprated diffrent pards of the admin part in seprate files to be more organized." />
+    <option name="LAST_COMMIT_MESSAGE" value="Developement 11/29/2020&#10;- seprated diffrent pards of the admin part in seprate files to be more organized." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1241" y="842" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606680120070">
+    <state x="-1241" y="842" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606916223753">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1241" y="842" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606680120070" />
-    <state x="460" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606418832337">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="-1241" y="842" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606916223753" />
+    <state x="-1230" y="795" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606937972812">
+      <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1230" y="795" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606249069784" />
+    <state x="-1230" y="795" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606937972812" />
     <state x="460" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606418832337" />
-    <state x="390" y="0" key="CommitChangelistDialog2" timestamp="1606586463366">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="-1335" y="552" key="CommitChangelistDialog2" timestamp="1606682709474">
+      <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1335" y="552" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606420855895" />
+    <state x="-1335" y="552" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606682709474" />
     <state x="390" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1606586463366" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1605211419687">
       <screen x="-1920" y="522" width="1920" height="1040" />
@@ -360,10 +376,14 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1184" y="763" key="NewPhpClassDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606248488604" />
-    <state x="368" y="147" key="Vcs.Push.Dialog.v2" timestamp="1606586490258">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="-1152" y="964" key="NewPhpFileDialog" timestamp="1606916188167">
+      <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606165170283" />
+    <state x="-1152" y="964" key="NewPhpFileDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606916188167" />
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1606682739637">
+      <screen x="-1920" y="522" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606682739637" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606586490258" />
     <state x="411" y="148" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1606578986989">
       <screen x="0" y="0" width="1280" height="680" />
@@ -385,10 +405,10 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1304" y="501" key="run.anything.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605563861659" />
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1606678489003">
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1606920485245">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606678489003" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1606578921282" />
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606920485245" />
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1606840501038" />
   </component>
 </project>

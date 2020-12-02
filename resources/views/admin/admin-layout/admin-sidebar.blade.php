@@ -1,9 +1,9 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-        <img src="{{asset('img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+    <a href="{{route('admin-dashboard')}}" class="brand-link">
+        <img src="{{asset('img/user2-160x160.jpg')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
              style="opacity: .8">
-        <span class="brand-text font-weight-light">Admin</span>
+        <span class="brand-text font-weight-light"> SHIMA </span>
     </a>
     <!-- Sidebar -->
     <div class="sidebar">
@@ -16,14 +16,15 @@
                 <a href="#" class="d-block">Moslem Teymoori</a>
             </div>
         </div>
+
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                      with font-awesome or any other icon font library -->
-                <li class="nav-item has-treeview menu-open">
-                    <a href="#" class="nav-link active">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                <li class="nav-item has-treeview {{ Route::IS('admin-teacher') || Route::IS('admin-student') ? 'menu-open' : '' }}">
+                    <a href="#" class="nav-link {{ Route::IS('admin-teacher') || Route::IS('admin-student') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-chart-pie"></i>
                         <p>
                             Dashboard
                             <i class="right fas fa-angle-left"></i>
@@ -31,15 +32,15 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="./index.html" class="nav-link active">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Dashboard v1</p>
+                            <a href="{{route('admin-teacher')}}" class="nav-link {{ Route::IS('admin-teacher') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon ml-2"></i>
+                                <p>Teacher</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./index2.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Dashboard v2</p>
+                            <a href="{{route('admin-student')}}" class="nav-link {{ Route::IS('admin-student') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon ml-2"></i>
+                                <p>Student</p>
                             </a>
                         </li>
                     </ul>
@@ -48,35 +49,15 @@
                     <a href="pages/widgets.html" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
-                            Widgets
-                            <span class="right badge badge-danger">New</span>
+                            Course
                         </p>
                     </a>
-                </li>
-
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-copy"></i>
-                        <p>
-                            Layout Options
-                            <i class="fas fa-angle-left right"></i>
-                            <span class="badge badge-info right">6</span>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Top Navigation</p>
-                            </a>
-                        </li>
-                    </ul>
                 </li>
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-chart-pie"></i>
                         <p>
-                            Charts
+                            Contents
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -84,13 +65,19 @@
                         <li class="nav-item">
                             <a href="pages/charts/chartjs.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>ChartJS</p>
+                                <p>Video</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="pages/charts/flot.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Flot</p>
+                                <p>Voice</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/charts/flot.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Texts</p>
                             </a>
                         </li>
                     </ul>
@@ -198,11 +185,12 @@
                         </li>
                     </ul>
                 </li>
+
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-book"></i>
                         <p>
-                            Pages
+                            Payments
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -210,42 +198,26 @@
                         <li class="nav-item">
                             <a href="pages/examples/invoice.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Invoice</p>
+                                <p>Payment per course</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="pages/examples/profile.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Profile</p>
+                                <p>Payment by students</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a href="pages/examples/projects.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Projects</p>
+                                <p>Archived Payments</p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="pages/examples/project-add.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Project Add</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/examples/project-edit.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Project Edit</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/examples/contacts.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Contacts</p>
-                            </a>
-                        </li>
+
                     </ul>
                 </li>
+
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon far fa-plus-square"></i>
