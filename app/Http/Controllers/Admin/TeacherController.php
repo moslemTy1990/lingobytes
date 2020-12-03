@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 class TeacherController extends Controller
 {
     function index(){
-
         return view('admin.pages.teacher');
     }
 }

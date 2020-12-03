@@ -35,6 +35,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
  * Web Pack
  * ENUM creation for user types
  * TokenBased Auth
- *
+ * when doing the admin login from user login page, there is no information about the errors
  *
  * */

@@ -27,7 +27,7 @@ class UserSeeder extends Seeder
             'family'=>'teymoori',
             'email' => 'user@gmail.com',
             'password' => '$2y$10$QntNmbEUTBROklOIfKaaieCzNCZukp7aqjdzMNt2SoNcV3jBa.wIG',
-            'role' => 'admin'
+            'role' => 'student'
         ]);
 
     }
