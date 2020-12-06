@@ -18,8 +18,6 @@ class CreateStudentsTable extends Migration
             $table->foreignId('user_id');
             $table->string('level');  //can be enum
             //last status
-            $table->integer('age');
-            $table->integer('mobile');
             $table->timestamp('last_login');
             $table->integer('verify_code');
             $table->timestamps();
