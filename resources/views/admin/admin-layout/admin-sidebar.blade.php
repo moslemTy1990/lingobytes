@@ -45,8 +45,8 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                <li class="nav-item" >
+                    <a href="{{route('courses')}}" class="nav-link  {{ Route::IS('courses') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Course

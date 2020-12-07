@@ -31,7 +31,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 /*
  * GUEST middleware for admin
  * CSRF for loqout
- * Teacher Registration
  * Web Pack
  * ENUM creation for user types
  * TokenBased Auth

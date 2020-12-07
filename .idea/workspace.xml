@@ -9,14 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea95ac5-aaac-4217-a9bc-7d6370ca8b09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/courses.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/TeacherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/TeacherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_12_195715_create_teachers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_195715_create_teachers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_12_195844_create_students_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_195844_create_students_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/student.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/student.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/teacher.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/teacher.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CourseController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-layout/admin-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-layout/admin-sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/Admin/admin-routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Admin/admin-routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,17 +166,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\lingobytes\app\Http\Controllers" />
+      <recent name="C:\laragon\www\lingobytes\app\Http\Controllers\Admin" />
+      <recent name="C:\laragon\www\lingobytes\resources\views\admin\admin-dashboard-pages" />
+      <recent name="C:\laragon\www\lingobytes\public\js" />
+      <recent name="C:\laragon\www\lingobytes\public\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\laragon\www\lingobytes\resources\views\admin\pages" />
       <recent name="C:\laragon\www\lingobytes\public\webfonts" />
       <recent name="C:\laragon\www\lingobytes\public\css" />
       <recent name="C:\laragon\www\lingobytes\public\js" />
       <recent name="C:\laragon\www\lingobytes\resources\js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\lingobytes\resources\views\admin\admin-dashboard-pages" />
-      <recent name="C:\laragon\www\lingobytes\public\js" />
-      <recent name="C:\laragon\www\lingobytes\public\css" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.login.blade.php">
@@ -220,7 +220,7 @@
       <workItem from="1606730335985" duration="42532000" />
       <workItem from="1607111096548" duration="7582000" />
       <workItem from="1607183775890" duration="247000" />
-      <workItem from="1607248800850" duration="29527000" />
+      <workItem from="1607248800850" duration="31652000" />
     </task>
     <task id="LOCAL-00001" summary="Developement 11/14/2020&#10;- initial Migrations are created. &#10;- initial relation between migrations are done">
       <created>1605388403560</created>
@@ -299,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607286673902</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Development 12/07/2020&#10;- adding a table for teacher list including actions such as Delete,Edit,Deactivate&#10;- adding a table for Student list including actions such as Delete,Edit,Deactivate">
+      <created>1607358804997</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607358804997</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,22 +361,23 @@
     <MESSAGE value="Development 12/02/2020&#10;- added views for Teacher and student&#10;- added controller for adminTeacher and adminStudent&#10;- added Profile photo section to the users&#10;- added conditional classes for html tags for teacher and student&#10;- changed the db seeder and added a seeder for user.&#10;- seprate admin routes in a different file" />
     <MESSAGE value="Development 12/03/2020&#10;- fixed the bug of the admin user login by jetstream service provider&#10;- teacher registration form. &#10;- temp user seeder" />
     <MESSAGE value="Development 12/06/2020&#10;- finished teacher registration including profile photo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Development 12/06/2020&#10;- finished teacher registration including profile photo" />
+    <MESSAGE value="Development 12/07/2020&#10;- adding a table for teacher list including actions such as Delete,Edit,Deactivate&#10;- adding a table for Student list including actions such as Delete,Edit,Deactivate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Development 12/07/2020&#10;- adding a table for teacher list including actions such as Delete,Edit,Deactivate&#10;- adding a table for Student list including actions such as Delete,Edit,Deactivate" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1241" y="842" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606916223753">
+    <state x="-1241" y="842" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607372291438">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1241" y="842" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606916223753" />
+    <state x="-1241" y="842" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1607372291438" />
     <state x="-1230" y="795" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606937972812">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1230" y="795" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606937972812" />
     <state x="460" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606418832337" />
-    <state x="-1335" y="522" key="CommitChangelistDialog2" timestamp="1607286673191">
+    <state x="-1335" y="522" key="CommitChangelistDialog2" timestamp="1607358804378">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1335" y="522" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1607286673191" />
+    <state x="-1335" y="522" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1607358804378" />
     <state x="390" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1606586463366" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1605211419687">
       <screen x="-1920" y="522" width="1920" height="1040" />
@@ -395,10 +403,10 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1152" y="964" key="NewPhpFileDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606916188167" />
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1607286899630">
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1607358843222">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1607286899630" />
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1607358843222" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606586490258" />
     <state x="411" y="148" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1606578986989">
       <screen x="0" y="0" width="1280" height="680" />
