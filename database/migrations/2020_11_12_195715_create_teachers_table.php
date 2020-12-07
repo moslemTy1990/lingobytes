@@ -17,7 +17,7 @@ class CreateTeachersTable extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->timestamp('last_login');
-            $table->integer('verify_code');
+            $table->boolean('status' )->default(true);
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

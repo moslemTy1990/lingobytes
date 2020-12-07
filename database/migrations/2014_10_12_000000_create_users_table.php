@@ -21,7 +21,6 @@ class CreateUsersTable extends Migration {
             $table->string('password');
             $table->rememberToken();
             $table->enum('role', ['admin', 'student', 'teacher'])->default('student');
-
             $table->string('mobile', 11)->nullable();
             $table->integer('age')->nullable();
             $table->enum('gender', ['Male', 'Female'])->nullable();

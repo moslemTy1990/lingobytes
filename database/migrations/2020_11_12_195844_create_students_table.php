@@ -19,7 +19,7 @@ class CreateStudentsTable extends Migration
             $table->string('level');  //can be enum
             //last status
             $table->timestamp('last_login');
-            $table->integer('verify_code');
+            $table->boolean('status' )->default(true);
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

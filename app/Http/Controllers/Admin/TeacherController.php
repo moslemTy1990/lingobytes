@@ -17,22 +17,24 @@ class TeacherController extends Controller
     }
 
   function create(Request $request){
-      $profile_photo="";
       $validate = $request->validate(
           [
           'name' => ['required', 'string', 'max:255'],
           'username' => ['required', 'string','unique:users', 'max:255'],
           'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
           'password' => ['required', 'string', 'min:8', 'confirmed'],
+          'mobile'=> ['required','digits:11'],
           'photoInput' => 'image'
           ]);
 
 
-
+//TODO ENUM
      $teacher= User::create([
           'name' => $validate['name'],
           'username' => $validate['username'],
           'email' => $validate['email'],
+          'role'=>'teacher',
+          'mobile'=>(string)$validate['mobile'],
           'password' => Hash::make($validate['password']),
       ]);
       if(request('photoInput'))
