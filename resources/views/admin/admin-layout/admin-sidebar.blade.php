@@ -10,10 +10,10 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="{{asset('img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
+                <img src="{{asset('img/admin.png')}}" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Moslem Teymoori</a>
+                <a href="{{route('admin-dashboard')}}" class="d-block">Home</a>
             </div>
         </div>
 
@@ -32,7 +32,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{route('admin-teacher')}}" class="nav-link {{ Route::IS('admin-teacher') ? 'active' : '' }}">
+                            <a href="{{route('teacher')}}" class="nav-link {{ Route::IS('admin-teacher') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon ml-2"></i>
                                 <p>Teacher</p>
                             </a>
@@ -71,13 +71,13 @@
                         <li class="nav-item">
                             <a href="pages/charts/flot.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Voice</p>
+                                <p>Podcasts</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="pages/charts/flot.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Texts</p>
+                                <p>Passage</p>
                             </a>
                         </li>
                     </ul>

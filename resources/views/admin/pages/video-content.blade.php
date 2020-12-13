@@ -53,6 +53,7 @@
                             </div>
                         </div>
                     </div>
+
                     {{-- second row of inputs   --}}
                     <div class="row">
                         {{--Start Date--}}
@@ -75,7 +76,9 @@
                                 @enderror
                             </div>
                         </div>
+
                     </div>
+
                     {{-- third row of inputs   --}}
                     <div class="row justify-content-center">
 
@@ -95,6 +98,7 @@
             <!-- /.card-body -->
             <div class="card-footer"></div>
         </div>
+
         <!-- /.row -->
         {{-- Table --}}
         <div class="row">
@@ -102,10 +106,12 @@
                 <div class="card">
                     <div class="card-header bg-gradient-gray ">
                         <h3 class="card-title">Courses</h3>
+
                         <div class="card-tools">
                             <div class="input-group input-group-sm" style="width: 150px;">
                                 <input type="text" name="table_search" class="form-control float-right"
                                        placeholder="Search">
+
                                 <div class="input-group-append">
                                     <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
                                 </div>
@@ -152,4 +158,5 @@
         </div>
         <!-- /.row -->
     </div>
+
 @endsection

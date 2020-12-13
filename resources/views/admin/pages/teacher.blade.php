@@ -150,6 +150,7 @@
                             <thead>
                             <tr>
                                 <th>ID</th>
+                                <th>Photo</th>
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Phone</th>
@@ -159,21 +160,29 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>183</td>
-                                <td>John Doe</td>
-                                <td>shima@gmail.com</td>
-                                <td>001253652485</td>
-                                <td>Active</td>
-                                <td>11-7-2014</td>
-                                <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-outline-info">Edit</a>
-                                        <a href="#" class="btn btn-outline-warning">De-Activate</a>
-                                        <a href="#" class="btn btn-outline-danger">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
+                            @foreach($teachers as $teacher)
+
+                                <tr>
+                                    <td>{{$teacher->teacher ? $teacher->teacher->id : '' }}</td>
+                                    <td>
+                                        @if($teacher->profile_photo_path)
+                                            <img src="{{asset('storage/'.$teacher->profile_photo_path)}}" class="rounded" alt="User Image" width="25">
+                                      @endif
+                                    </td>
+                                    <td>{{$teacher->name}}</td>
+                                    <td>{{$teacher->email}}</td>
+                                    <td>{{$teacher->mobile}}</td>
+                                    <td>{{$teacher->teacher && $teacher->teacher->status ? 'Active' : 'De-Active'}}</td>
+                                    <td>{{$teacher->teacher ? $teacher->teacher->last_login : ''}}</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-outline-info">Edit</a>
+                                            <a href="{{route('toggle-status', $teacher->id)}}" class="btn btn-outline-warning">{{$teacher->teacher && $teacher->teacher->status == 1 ? 'De-Activate' : 'Activate'}}</a>
+                                            <a href="{{route('delete-teacher', $teacher->id)}}" class="btn btn-outline-danger">Delete</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>

@@ -9,12 +9,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea95ac5-aaac-4217-a9bc-7d6370ca8b09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/courses.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/passage-content.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/podcast-content.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/video-content.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CourseController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/StudentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/TeacherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/TeacherController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Teacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/AdminLTELogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/user1-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/user3-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/user8-128x128.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-layout/admin-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-layout/admin-sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/courses.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/courses.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/student.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/student.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/teacher.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/teacher.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/Admin/admin-routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Admin/admin-routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +231,7 @@
       <workItem from="1606730335985" duration="42532000" />
       <workItem from="1607111096548" duration="7582000" />
       <workItem from="1607183775890" duration="247000" />
-      <workItem from="1607248800850" duration="31652000" />
+      <workItem from="1607248800850" duration="68051000" />
     </task>
     <task id="LOCAL-00001" summary="Developement 11/14/2020&#10;- initial Migrations are created. &#10;- initial relation between migrations are done">
       <created>1605388403560</created>
@@ -306,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607358804997</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Development 12/07/2020&#10;- added Course page and route">
+      <created>1607373044295</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607373044295</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +380,8 @@
     <MESSAGE value="Development 12/03/2020&#10;- fixed the bug of the admin user login by jetstream service provider&#10;- teacher registration form. &#10;- temp user seeder" />
     <MESSAGE value="Development 12/06/2020&#10;- finished teacher registration including profile photo" />
     <MESSAGE value="Development 12/07/2020&#10;- adding a table for teacher list including actions such as Delete,Edit,Deactivate&#10;- adding a table for Student list including actions such as Delete,Edit,Deactivate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Development 12/07/2020&#10;- adding a table for teacher list including actions such as Delete,Edit,Deactivate&#10;- adding a table for Student list including actions such as Delete,Edit,Deactivate" />
+    <MESSAGE value="Development 12/07/2020&#10;- added Course page and route" />
+    <option name="LAST_COMMIT_MESSAGE" value="Development 12/07/2020&#10;- added Course page and route" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1241" y="842" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607372291438">
@@ -374,10 +393,10 @@
     </state>
     <state x="-1230" y="795" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606937972812" />
     <state x="460" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606418832337" />
-    <state x="-1335" y="522" key="CommitChangelistDialog2" timestamp="1607358804378">
+    <state x="-1335" y="522" key="CommitChangelistDialog2" timestamp="1607373043648">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1335" y="522" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1607358804378" />
+    <state x="-1335" y="522" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1607373043648" />
     <state x="390" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1606586463366" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1605211419687">
       <screen x="-1920" y="522" width="1920" height="1040" />
@@ -403,10 +422,10 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1152" y="964" key="NewPhpFileDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606916188167" />
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1607358843222">
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1607373069102">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1607358843222" />
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1607373069102" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606586490258" />
     <state x="411" y="148" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1606578986989">
       <screen x="0" y="0" width="1280" height="680" />
@@ -428,11 +447,11 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1304" y="501" key="run.anything.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605563861659" />
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1607358249580">
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1607807065547">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1607358249580" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1607275882145" />
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1607807065547" />
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1607541060335" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

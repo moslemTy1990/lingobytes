@@ -2,7 +2,7 @@
 @section('page-content')
 
     <div class="content-wrapper">
-       <!-- /.row -->
+        <!-- /.row -->
         <div class="row">
             <div class="col-12">
                 <div class="card">
@@ -35,29 +35,37 @@
                                 <th>Status</th>
                                 <th>Level</th>
                                 <th>Last Login</th>
+                                <th>Registration Date</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>183</td>
-                                <td>.......</td>
-                                <td>John</td>
-                                <td>shima@gmail.com</td>
-                                <td>001253652485</td>
-                                <td>M</td>
-                                <td>23</td>
-                                <td>Active</td>
-                                <td>Starter</td>
-                                <td>11-7-2014</td>
-                                <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-outline-info">Edit</a>
-                                        <a href="#" class="btn btn-outline-warning">De-Activate</a>
-                                        <a href="#" class="btn btn-outline-danger">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
+                            @foreach($students as $student)
+                                <tr>
+                                    <td>{{$student->id}}</td>
+                                    <td>
+                                        @if($student->profile_photo_path)
+                                            <img src="{{asset('storage/'.$student->profile_photo_path)}}" class="rounded" alt="User Image" width="25">
+                                        @endif
+                                    </td>
+                                    <td>{{$student->name}}</td>
+                                    <td>{{$student->email}}</td>
+                                    <td>{{$student->phone}}</td>
+                                    <td>{{$student->gender}}</td>
+                                    <td>{{$student->age}}</td>
+                                    <td>{{$student->status}}</td>
+                                    <td>..................</td>
+                                    <td>........</td>
+                                    <td>{{$student->created_at}}</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-outline-info">Edit</a>
+                                            <a href="#" class="btn btn-outline-warning">De-Activate</a>
+                                            <a href="#" class="btn btn-outline-danger">Delete</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>
