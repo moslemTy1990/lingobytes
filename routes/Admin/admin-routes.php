@@ -18,13 +18,15 @@ Route::group(['middleware' => 'admin'], function () {
     Route::get('/logout', [AdminController::class,'destroy'])->name('admin-logout');
 
     // Teacher related routes
-    Route::get('/teacher', [TeacherController::class,'index'])->name('teacher');
+    Route::get('/teacher', [TeacherController::class,'index'])->name('admin-teacher');
     Route::post('/teacher', [TeacherController::class,'create'])->name('add-teacher');
     Route::get('/teacher/{id}', [TeacherController::class,'delete'])->name('delete-teacher');
-    Route::get('/toggle-status/{id}', [TeacherController::class,'teacherUpdate'])->name('toggle-status');
+    Route::get('/toggle-teacher-status/{id}', [TeacherController::class,'teacherStatusUpdate'])->name('activate-teacher');
 
     // Student related routes
     Route::get('/student', [StudentController::class,'index'])->name('admin-student');
+    Route::get('/student/{id}', [StudentController::class,'delete'])->name('delete-student');
+    Route::get('/toggle-student-status/{id}', [StudentController::class,'studentStatusUpdate'])->name('activate-student');
 
 
     // Course related routes

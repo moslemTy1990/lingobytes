@@ -97,11 +97,7 @@
                             <div class="form-group">
                                 <label for="photoInput">Profile photo</label>
                                 <div class="input-group">
-                                    {{--                                    <div class="custom-file">--}}
-                                    <input type="file" class="form-control-file" id="photoInput" name="photoInput"
-                                           value="{{old('photoInput')}}">
-                                    {{--                                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>--}}
-                                    {{--                                    </div>--}}
+                                    <input type="file" class="form-control-file" id="photoInput" name="photoInput">
                                     @error('photoInput')
                                     <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                     @enderror
@@ -166,8 +162,9 @@
                                     <td>{{$teacher->teacher ? $teacher->teacher->id : '' }}</td>
                                     <td>
                                         @if($teacher->profile_photo_path)
-                                            <img src="{{asset('storage/'.$teacher->profile_photo_path)}}" class="rounded" alt="User Image" width="25">
-                                      @endif
+                                            <img src="{{asset('storage/'.$teacher->profile_photo_path)}}"
+                                                 class="rounded" alt="User Image" width="25">
+                                        @endif
                                     </td>
                                     <td>{{$teacher->name}}</td>
                                     <td>{{$teacher->email}}</td>
@@ -177,8 +174,10 @@
                                     <td>
                                         <div class="btn-group">
                                             <a href="#" class="btn btn-outline-info">Edit</a>
-                                            <a href="{{route('toggle-status', $teacher->id)}}" class="btn btn-outline-warning">{{$teacher->teacher && $teacher->teacher->status == 1 ? 'De-Activate' : 'Activate'}}</a>
-                                            <a href="{{route('delete-teacher', $teacher->id)}}" class="btn btn-outline-danger">Delete</a>
+                                            <a href="{{route('activate-teacher', $teacher->id)}}"
+                                               class="btn btn-outline-warning">{{$teacher->teacher && $teacher->teacher->status == 1 ? 'De-Activate' : 'Activate'}}</a>
+                                            <a href="{{route('delete-teacher', $teacher->id)}}"
+                                               class="btn btn-outline-danger">Delete</a>
                                         </div>
                                     </td>
                                 </tr>

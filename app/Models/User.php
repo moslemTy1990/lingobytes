@@ -28,7 +28,9 @@ class User extends Authenticatable
         'email',
         'password',
         'mobile',
-        'role'
+        'role',
+        'username'
+
     ];
 
     /**
@@ -56,6 +58,11 @@ class User extends Authenticatable
     {
         return $this->hasOne(Teacher::class);
     }
+
+    public function student(){
+        return $this->hasOne(Student::class);
+    }
+
     /**
      * The accessors to append to the model's array form.
      *
@@ -64,9 +71,4 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
-
-    public function student(){
-        return $this->hasOne(Student::class);
-    }
-
 }

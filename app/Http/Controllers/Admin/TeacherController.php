@@ -18,8 +18,6 @@ class TeacherController extends Controller {
     function index()
     {
         $teachers = User::with('teacher')->where('role', 'teacher')->get();
-
-
         return view('admin.pages.teacher', compact('teachers'));
     }
 
@@ -27,7 +25,7 @@ class TeacherController extends Controller {
     function delete($id)
     {
         $teacher = User::findOrFail($id);
-        if(file_exists(public_path() . '/storage/' . $teacher->profile_photo_path))
+        if($teacher->profile_photo_path && file_exists(public_path() . '/storage/' . $teacher->profile_photo_path))
         {
             unlink(public_path() . '/storage/' . $teacher->profile_photo_path);
             $teacher->delete();
@@ -43,7 +41,7 @@ class TeacherController extends Controller {
         }
     }
 
-//    create teacher //TOTO FLASH MEssages
+    //    create teacher //TOTO FLASH MEssages
     function create(Request $request)
     {
         $validate = $request->validate(
@@ -55,7 +53,6 @@ class TeacherController extends Controller {
                 'mobile' => ['required', 'digits:11'],
                 'photoInput' => 'image'
             ]);
-
 
 //TODO ENUM
         $teacher = User::create([
@@ -74,8 +71,8 @@ class TeacherController extends Controller {
         return back();
     }
 
-//Status update for teacher by admin
-    public function teacherUpdate($id)
+    //    Status update for teacher by admin
+    public function teacherStatusUpdate($id)
     {
         $user = User::findOrFail($id);
         if($user->teacher && $user->teacher->status == 1)
@@ -92,6 +89,7 @@ class TeacherController extends Controller {
                 'status' => 1
             ]);
         }
+
         return back();
     }
 }

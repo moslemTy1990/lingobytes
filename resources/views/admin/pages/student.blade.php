@@ -42,7 +42,7 @@
                             <tbody>
                             @foreach($students as $student)
                                 <tr>
-                                    <td>{{$student->id}}</td>
+                                    <td>{{$student->student ? $student->student->id : '' }}</td>
                                     <td>
                                         @if($student->profile_photo_path)
                                             <img src="{{asset('storage/'.$student->profile_photo_path)}}" class="rounded" alt="User Image" width="25">
@@ -50,18 +50,18 @@
                                     </td>
                                     <td>{{$student->name}}</td>
                                     <td>{{$student->email}}</td>
-                                    <td>{{$student->phone}}</td>
+                                    <td>{{$student->mobile}}</td>
                                     <td>{{$student->gender}}</td>
                                     <td>{{$student->age}}</td>
-                                    <td>{{$student->status}}</td>
+                                    <td>{{$student->student && $student->student->status ? 'Active' : 'De-Active'}}</td>
                                     <td>..................</td>
-                                    <td>........</td>
+                                    <td>{{$student->student ? $student->student->last_login : ''}}</td>
                                     <td>{{$student->created_at}}</td>
                                     <td>
                                         <div class="btn-group">
                                             <a href="#" class="btn btn-outline-info">Edit</a>
-                                            <a href="#" class="btn btn-outline-warning">De-Activate</a>
-                                            <a href="#" class="btn btn-outline-danger">Delete</a>
+                                            <a href="{{route('activate-student',$student->id)}}" class="btn btn-outline-warning">{{$student->student && $student->student->status == 1 ? 'De-Activate' : 'Activate'}}</a>
+                                            <a href="{{route('delete-student',$student->id)}}" class="btn btn-outline-danger">Delete</a>
                                         </div>
                                     </td>
                                 </tr>

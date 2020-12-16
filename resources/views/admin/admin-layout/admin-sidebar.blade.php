@@ -32,7 +32,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{route('teacher')}}" class="nav-link {{ Route::IS('admin-teacher') ? 'active' : '' }}">
+                            <a href="{{route('admin-teacher')}}" class="nav-link {{ Route::IS('admin-teacher') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon ml-2"></i>
                                 <p>Teacher</p>
                             </a>

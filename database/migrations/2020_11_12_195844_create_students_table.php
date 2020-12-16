@@ -16,7 +16,7 @@ class CreateStudentsTable extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id');
-            $table->string('level');  //can be enum
+            $table->string('level')->nullable();  //can be enum
             //last status
             $table->timestamp('last_login');
             $table->boolean('status' )->default(true);
