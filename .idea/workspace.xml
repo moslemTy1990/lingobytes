@@ -9,17 +9,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea95ac5-aaac-4217-a9bc-7d6370ca8b09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ContentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/file-manager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/file-manager/css/file-manager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/file-manager/js/file-manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/file-manager/js/file-manager.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lingobytes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lingobytes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/StudentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/TeacherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/TeacherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_12_195844_create_students_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_195844_create_students_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_provision" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_provision" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_set_name" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_set_name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/id" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/index_uuid" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/index_uuid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/private_key" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/private_key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-layout/admin-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-layout/admin-sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/student.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/student.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/teacher.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/teacher.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-layout/main-Layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-layout/main-Layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/main-dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/main-dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/video-content.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/Admin/admin-routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Admin/admin-routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +164,9 @@
       <path value="$PROJECT_DIR$/vendor/brick/math" />
       <path value="$PROJECT_DIR$/vendor/laravel/homestead" />
       <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/intervention/imagecache" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/alexusmai/laravel-file-manager" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kCLy6qe50tvYiIIZuvnSnZnkdP" />
@@ -225,7 +239,9 @@
       <workItem from="1606730335985" duration="42532000" />
       <workItem from="1607111096548" duration="7582000" />
       <workItem from="1607183775890" duration="247000" />
-      <workItem from="1607248800850" duration="80024000" />
+      <workItem from="1607248800850" duration="85266000" />
+      <workItem from="1608456996460" duration="4422000" />
+      <workItem from="1608720832256" duration="2544000" />
     </task>
     <task id="LOCAL-00001" summary="Developement 11/14/2020&#10;- initial Migrations are created. &#10;- initial relation between migrations are done">
       <created>1605388403560</created>
@@ -325,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607855807933</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Development 12/16/2020&#10;- StudentController.php modified,&#10;- student deletion&#10;- student status activation and de activation&#10;- adding fillable property to Student.php&#10;- modifying the seeder">
+      <created>1608156132853</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608156132853</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +406,8 @@
     <MESSAGE value="Development 12/07/2020&#10;- adding a table for teacher list including actions such as Delete,Edit,Deactivate&#10;- adding a table for Student list including actions such as Delete,Edit,Deactivate" />
     <MESSAGE value="Development 12/07/2020&#10;- added Course page and route" />
     <MESSAGE value="Development 12/13/2020&#10;- teacher table insertion and status update.&#10;- teacher deletion&#10;- adding teacher relation to USER model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Development 12/13/2020&#10;- teacher table insertion and status update.&#10;- teacher deletion&#10;- adding teacher relation to USER model" />
+    <MESSAGE value="Development 12/16/2020&#10;- StudentController.php modified,&#10;- student deletion&#10;- student status activation and de activation&#10;- adding fillable property to Student.php&#10;- modifying the seeder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Development 12/16/2020&#10;- StudentController.php modified,&#10;- student deletion&#10;- student status activation and de activation&#10;- adding fillable property to Student.php&#10;- modifying the seeder" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1241" y="842" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607372291438">
@@ -395,10 +419,10 @@
     </state>
     <state x="-1230" y="795" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608149629323" />
     <state x="460" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606418832337" />
-    <state x="390" y="0" key="CommitChangelistDialog2" timestamp="1607855807320">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="-1335" y="522" key="CommitChangelistDialog2" timestamp="1608156132272">
+      <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1335" y="522" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1607373043648" />
+    <state x="-1335" y="522" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608156132272" />
     <state x="390" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607855807320" />
     <state x="422" y="95" key="FileChooserDialogImpl" timestamp="1607855925909">
       <screen x="0" y="0" width="1280" height="680" />
@@ -428,10 +452,10 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1152" y="964" key="NewPhpFileDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606916188167" />
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1608153088329">
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1608762475525">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608153088329" />
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608762475525" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607855901591" />
     <state x="411" y="148" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1606578986989">
       <screen x="0" y="0" width="1280" height="680" />
@@ -453,10 +477,10 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1304" y="501" key="run.anything.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605563861659" />
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1608154399813">
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1608761940520">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608154399813" />
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608761940520" />
     <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1607856823494" />
   </component>
   <component name="XDebuggerManager">

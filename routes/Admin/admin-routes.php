@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ContentController;
 use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\Admin\StudentController;
 use App\Http\Controllers\Admin\TeacherController;
@@ -33,7 +34,8 @@ Route::group(['middleware' => 'admin'], function () {
     Route::get('/courses', [CourseController::class,'index'])->name('courses');
     Route::post('/courses', [CourseController::class,'index'])->name('add-course');
 
-
+// content routes
+    Route::get('/content', [ContentController::class,'index'])->name('contents');
 
 
 

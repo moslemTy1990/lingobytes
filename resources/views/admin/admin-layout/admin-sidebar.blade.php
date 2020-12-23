@@ -26,7 +26,7 @@
                     <a href="#" class="nav-link {{ Route::IS('admin-teacher') || Route::IS('admin-student') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-chart-pie"></i>
                         <p>
-                            Dashboard
+                            Admin
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -53,34 +53,13 @@
                         </p>
                     </a>
                 </li>
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-chart-pie"></i>
+                <li class="nav-item" >
+                    <a href="{{route('contents')}}" class="nav-link  {{ Route::IS('contents') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-th"></i>
                         <p>
-                            Contents
-                            <i class="right fas fa-angle-left"></i>
+                            File Manager
                         </p>
                     </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="pages/charts/chartjs.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Video</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/flot.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Podcasts</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/flot.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Passage</p>
-                            </a>
-                        </li>
-                    </ul>
                 </li>
 
                 <li class="nav-item has-treeview">

@@ -2,6 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8">
+
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Admin | Dashboard</title>
         <!-- Tell the browser to be responsive to screen width -->
@@ -26,6 +29,7 @@
         <link rel="stylesheet" href="{{asset('css/summernote-bs4.css')}}">
         <!-- Google Font: Source Sans Pro -->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+        @yield('styles')
     </head>
     <body class="hold-transition sidebar-mini layout-fixed">
 
@@ -60,5 +64,6 @@
         <script src="{{asset('js/adminlte.js')}}"></script>
         <!-- AdminLTE for demo purposes -->
         <script src="{{asset('js/demo.js')}}"></script>
+@yield('scripts')
     </body>
 </html>

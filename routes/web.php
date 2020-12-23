@@ -22,6 +22,9 @@ Route::get('/', function () {  return view('welcome'); });
 Route::prefix('admin')->group(base_path('routes/Admin/admin-routes.php'));
 
 
+
+
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
