@@ -21,7 +21,8 @@ class CreateUsersTable extends Migration {
             $table->string('password');
             $table->rememberToken();
             $table->text('profile_photo_path')->nullable();
-
+            $table->timestamp('last_login')->nullable();
+            $table->boolean('status')->default(true);
             $table->timestamps();
         });
     }

@@ -21,6 +21,7 @@ class UserSeeder extends Seeder
             'username'=>'admin',
             'email' => 'admin@gmail.com',
             'password' => '$2y$10$QntNmbEUTBROklOIfKaaieCzNCZukp7aqjdzMNt2SoNcV3jBa.wIG',
+            'last_login'=>Carbon::now(),
             'created_at'=>Carbon::now(),
             'updated_at'=>Carbon::now()
         ]);

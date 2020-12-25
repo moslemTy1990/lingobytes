@@ -149,7 +149,6 @@
                                 <th>Photo</th>
                                 <th>Name</th>
                                 <th>Email</th>
-                                <th>Phone</th>
                                 <th>Status</th>
                                 <th>Last Login</th>
                                 <th>Action</th>
@@ -159,7 +158,7 @@
                             @foreach($teachers as $teacher)
 
                                 <tr>
-                                    <td>{{$teacher->teacher ? $teacher->teacher->id : '' }}</td>
+                                    <td>{{$teacher->id }}</td>
                                     <td>
                                         @if($teacher->profile_photo_path)
                                             <img src="{{asset('storage/'.$teacher->profile_photo_path)}}"
@@ -168,14 +167,13 @@
                                     </td>
                                     <td>{{$teacher->name}}</td>
                                     <td>{{$teacher->email}}</td>
-                                    <td>{{$teacher->mobile}}</td>
-                                    <td>{{$teacher->teacher && $teacher->teacher->status ? 'Active' : 'De-Active'}}</td>
-                                    <td>{{$teacher->teacher ? $teacher->teacher->last_login : ''}}</td>
+                                    <td>{{$teacher->status==1?'Active' : 'De-Active'}}</td>
+                                    <td>{{$teacher->last_login}}</td>
                                     <td>
                                         <div class="btn-group">
                                             <a href="#" class="btn btn-outline-info">Edit</a>
                                             <a href="{{route('activate-teacher', $teacher->id)}}"
-                                               class="btn btn-outline-warning">{{$teacher->teacher && $teacher->teacher->status == 1 ? 'De-Activate' : 'Activate'}}</a>
+                                               class="btn btn-outline-warning">{{$teacher->status == 1 ? 'De-Activate' : 'Activate'}}</a>
                                             <a href="{{route('delete-teacher', $teacher->id)}}"
                                                class="btn btn-outline-danger">Delete</a>
                                         </div>

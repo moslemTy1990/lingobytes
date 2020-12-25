@@ -27,27 +27,22 @@
                                 @enderror
                             </div>
                         </div>
-                        {{-- Teacher ID --}}
+                    {{-- Registration Deadline --}}
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="teacher">Teacher ID</label>
-                                <select class="form-control" name="teacher" id="teacher">
-                                    <option selected="selected">Alabama</option>
-                                    <option>Alaska</option>
-                                    <option>California</option>
-                                    <option>Delaware</option>
-                                </select>
-                                @error('teacher')
+                                <label for="reg-deadline">Registration Deadline</label>
+                                <input type="datetime-local" class="form-control" id="reg-deadline" name="registration_deadline">
+                                @error('registration_deadline')
                                 <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                 @enderror
                             </div>
                         </div>
-                        {{-- Registration Deadline --}}
+                        {{--Start Date--}}
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="reg-deadline">Registration Deadline</label>
-                                <input type="datetime-local" class="form-control" id="reg-deadline" name="registration-deadline">
-                                @error('registration-deadline')
+                                <label for="start-date">Start Date</label>
+                                <input type="datetime-local" class="form-control" id="start-date" name="start_date">
+                                @error('start_date')
                                 <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                 @enderror
                             </div>
@@ -55,22 +50,13 @@
                     </div>
                     {{-- second row of inputs   --}}
                     <div class="row">
-                        {{--Start Date--}}
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="start-date">Start Date</label>
-                                <input type="datetime-local" class="form-control" id="start-date" name="start-date">
-                                @error('start-date')
-                                <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
-                                @enderror
-                            </div>
-                        </div>
+
                         {{-- End Date --}}
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="end-date">End Date</label>
-                                <input type="datetime-local" class="form-control" id="end-date" name="end-date">
-                                @error('end-date')
+                                <input type="datetime-local" class="form-control" id="end-date" name="end_date">
+                                @error('end_date')
                                 <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                 @enderror
                             </div>
@@ -122,26 +108,32 @@
                                 <th>Start Date</th>
                                 <th>End Date</th>
                                 <th>Registration Deadline</th>
-                                <th>Teacher</th>
+                                <th>Material</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>183</td>
-                                <td>IELTS Writing</td>
-                                <td>12/08/2020</td>
-                                <td>12/08/2021</td>
-                                <td>12/09/2020</td>
-                                <td>Shima Ghandi</td>
-                                <td>
-                                    <div class="btn-group">
-                                        <a href="#" class="btn btn-outline-info">Edit</a>
-                                        <a href="#" class="btn btn-outline-warning">De-Activate</a>
-                                        <a href="#" class="btn btn-outline-danger">Delete</a>
-                                    </div>
-                                </td>
-                            </tr>
+                            @foreach($courses as $course)
+                                <tr>
+                                    <td>{{ $course->id }}</td>
+                                    <td>{{ $course->name }}</td>
+                                    <td>{{ $course->start_date }}</td>
+                                    <td>{{ $course->end_date }}</td>
+                                    <td>{{ $course->registration_deadline }}</td>
+                                    <td>
+                                        {{-- TODO: check this out--}}
+                                        SHOULD BE IMPLEMENTED
+                                    </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-outline-info">Edit</a>
+                                            <a href="#" class="btn btn-outline-warning">De-Activate</a>
+                                            <a href="#" class="btn btn-outline-danger">Delete</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            @endforeach
+
                             </tbody>
                         </table>
                     </div>
