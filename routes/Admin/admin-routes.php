@@ -8,7 +8,7 @@ use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 //Routs fot showing the admin panel and doing the login
-Route::get('/login', [AdminController::class, 'index'])->name('admin-login');
+Route::get('/login', [AdminController::class, 'index'])->middleware('admin.guest')->name('admin-login');
 Route::Post('/', [AdminController::class,'checkAdmin'])->name('admin-page');
 
 
