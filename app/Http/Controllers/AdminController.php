@@ -12,15 +12,16 @@ class AdminController extends Controller
     }
 
     public function checkAdmin(Request $request){
-        if (Auth::attempt(['email' => $request['email'], 'password' => $request['password'], 'role' => 'admin'])) {
-            return view('admin.main-dashboard');
+        if (Auth::guard('web')->attempt(['email' => $request['email'], 'password' => $request['password']])) {
+              return view('admin.main-dashboard');
+
         }
         return redirect()->route('admin-login')->withErrors(['Wrong Credentials.']);
     }
 
     public function destroy(){
-        if (Auth::user() && auth()->user()->role == 'admin') {
-            Auth::logout();
+        if (Auth::guard('web')->user()) {
+            Auth::guard('web')->logout();
         }
         return redirect()->route('admin-login');
     }

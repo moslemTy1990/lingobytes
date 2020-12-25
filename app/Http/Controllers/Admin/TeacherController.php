@@ -17,13 +17,14 @@ class TeacherController extends Controller {
     //list of teachers
     function index()
     {
-        $teachers = User::with('teacher')->where('role', 'teacher')->get();
+        $teachers = User::all();
         return view('admin.pages.teacher', compact('teachers'));
     }
 
     //    delete teacher //TOTO FLASH MEssages
     function delete($id)
     {
+        // TODO: check the privacy of other admins
         $teacher = User::findOrFail($id);
         if($teacher->profile_photo_path && file_exists(public_path() . '/storage/' . $teacher->profile_photo_path))
         {
@@ -54,40 +55,15 @@ class TeacherController extends Controller {
                 'photoInput' => 'image'
             ]);
 
-//TODO ENUM
         $teacher = User::create([
             'name' => $validate['name'],
             'username' => $validate['username'],
             'email' => $validate['email'],
-            'role' => 'teacher',
-            'mobile' => (string)$validate['mobile'],
             'password' => Hash::make($validate['password']),
         ]);
         if(request('photoInput'))
         {
             $teacher->updateProfilePhoto(request('photoInput'));
-        }
-
-        return back();
-    }
-
-    //    Status update for teacher by admin
-    public function teacherStatusUpdate($id)
-    {
-        $user = User::findOrFail($id);
-        if($user->teacher && $user->teacher->status == 1)
-        {
-            $user->teacher()->updateOrCreate(['user_id' => $id], [
-                //TODO Lasr Login
-                'last_login' => Carbon::now(),
-                'status' => 0
-            ]);
-        } else
-        {
-            $user->teacher()->updateOrCreate(['user_id' => $id], [
-                'last_login' => Carbon::now(),
-                'status' => 1
-            ]);
         }
 
         return back();

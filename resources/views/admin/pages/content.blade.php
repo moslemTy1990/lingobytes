@@ -5,7 +5,6 @@
 @section('page-content')
     <div class="content-wrapper">
 
-
         <div style="height: 600px;">
             <div id="fm"></div>
         </div>

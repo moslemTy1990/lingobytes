@@ -32,7 +32,10 @@ Route::group(['middleware' => 'admin'], function () {
 
     // Course related routes
     Route::get('/courses', [CourseController::class,'index'])->name('courses');
-    Route::post('/courses', [CourseController::class,'index'])->name('add-course');
+    Route::post('/courses', [CourseController::class,'create'])->name('add-course');
+
+
+
 
 // content routes
     Route::get('/content', [ContentController::class,'index'])->name('contents');

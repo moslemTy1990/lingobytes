@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Actions\Jetstream\DeleteUser;
+use App\Models\Student;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -32,14 +33,6 @@ class JetstreamServiceProvider extends ServiceProvider
         $this->configurePermissions();
 
         Jetstream::deleteUsersUsing(DeleteUser::class);
-
-        Fortify::authenticateUsing(function (Request $request){
-            $user  = User::where('email',$request->email)->first();
-            //TODO Enum for student
-            if($user && Hash::check($request->password, $user->password) && $user->role=='student'){
-                return $user;
-            }
-        });
     }
 
     /**

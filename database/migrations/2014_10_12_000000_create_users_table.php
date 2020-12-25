@@ -20,12 +20,8 @@ class CreateUsersTable extends Migration {
             $table->string('email')->unique();
             $table->string('password');
             $table->rememberToken();
-            $table->enum('role', ['admin', 'student', 'teacher'])->default('student');
-            $table->string('mobile', 11)->nullable();
-            $table->integer('age')->nullable();
-            $table->enum('gender', ['Male', 'Female'])->nullable();
-
             $table->text('profile_photo_path')->nullable();
+
             $table->timestamps();
         });
     }

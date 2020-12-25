@@ -30,14 +30,14 @@
                         {{-- Teacher ID --}}
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="teacher-id">Teacher ID</label>
-                                <select class="form-control">
+                                <label for="teacher">Teacher ID</label>
+                                <select class="form-control" name="teacher" id="teacher">
                                     <option selected="selected">Alabama</option>
                                     <option>Alaska</option>
                                     <option>California</option>
                                     <option>Delaware</option>
                                 </select>
-                                @error('teacher-id')
+                                @error('teacher')
                                 <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                 @enderror
                             </div>
@@ -45,9 +45,9 @@
                         {{-- Registration Deadline --}}
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="teacher-id">Registration Deadline</label>
-                                <input type="datetime-local" class="form-control" id="birthday" name="birthday">
-                                @error('teacher-id')
+                                <label for="reg-deadline">Registration Deadline</label>
+                                <input type="datetime-local" class="form-control" id="reg-deadline" name="registration-deadline">
+                                @error('registration-deadline')
                                 <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                 @enderror
                             </div>
@@ -58,9 +58,9 @@
                         {{--Start Date--}}
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="teacher-id">Start Date</label>
-                                <input type="datetime-local" class="form-control" id="birthday" name="birthday">
-                                @error('teacher-id')
+                                <label for="start-date">Start Date</label>
+                                <input type="datetime-local" class="form-control" id="start-date" name="start-date">
+                                @error('start-date')
                                 <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                 @enderror
                             </div>
@@ -68,9 +68,9 @@
                         {{-- End Date --}}
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="teacher-id">End Date</label>
-                                <input type="datetime-local" class="form-control" id="birthday" name="birthday">
-                                @error('teacher-id')
+                                <label for="end-date">End Date</label>
+                                <input type="datetime-local" class="form-control" id="end-date" name="end-date">
+                                @error('end-date')
                                 <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                 @enderror
                             </div>

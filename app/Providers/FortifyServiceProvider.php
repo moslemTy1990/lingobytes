@@ -6,7 +6,12 @@ use App\Actions\Fortify\CreateNewUser;
 use App\Actions\Fortify\ResetUserPassword;
 use App\Actions\Fortify\UpdateUserPassword;
 use App\Actions\Fortify\UpdateUserProfileInformation;
+use App\Http\Controllers\AdminController;
+use Illuminate\Contracts\Auth\StatefulGuard;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Fortify\Actions\AttemptToAuthenticate;
+use Laravel\Fortify\Actions\RedirectIfTwoFactorAuthenticatable;
 use Laravel\Fortify\Fortify;
 
 class FortifyServiceProvider extends ServiceProvider
@@ -18,7 +23,7 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+
     }
 
     /**

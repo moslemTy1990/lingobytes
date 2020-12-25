@@ -19,27 +19,19 @@ class UserSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'admin',
             'username'=>'admin',
-            'mobile' => '3518598229',
-            'age' => 30,
-            'gender'=>'Male',
             'email' => 'admin@gmail.com',
             'password' => '$2y$10$QntNmbEUTBROklOIfKaaieCzNCZukp7aqjdzMNt2SoNcV3jBa.wIG',
-            'role' => 'admin',
-            'created_at'=>Carbon::now(),
-            'updated_at'=>Carbon::now()
-        ]);
-        DB::table('users')->insert([
-            'name' => 'user',
-            'username'=>'user',
-            'mobile' => '09123652547',
-            'age' => 25,
-            'gender'=>'Female',
-            'email' => 'user@gmail.com',
-            'password' => '$2y$10$QntNmbEUTBROklOIfKaaieCzNCZukp7aqjdzMNt2SoNcV3jBa.wIG',
-            'role' => 'student',
             'created_at'=>Carbon::now(),
             'updated_at'=>Carbon::now()
         ]);
 
+        DB::table('students')->insert([
+            'name' => 'student',
+        //    'username'=>'student',
+            'email' => 'student@gmail.com',
+            'password' => '$2y$10$QntNmbEUTBROklOIfKaaieCzNCZukp7aqjdzMNt2SoNcV3jBa.wIG',
+            'created_at'=>Carbon::now(),
+            'updated_at'=>Carbon::now()
+        ]);
     }
 }

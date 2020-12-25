@@ -19,10 +19,10 @@ class CreateCoursesTable extends Migration
             $table->timestamp('start_date');
             $table->timestamp('end_date');
             $table->timestamp('registration_deadline');
-            $table->foreignId('teacher_id');
+            $table->foreignId('user_id');
             $table->timestamps();
 
-            $table->foreign('teacher_id')->references('id')->on('teachers')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

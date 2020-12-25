@@ -7,25 +7,22 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class RedirectIfAuthenticated
-{
+class RedirectIfAuthenticated {
+
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
-     * @param  string|null  ...$guards
+     * @param \Illuminate\Http\Request $request
+     * @param \Closure $next
+     * @param string|null ...$guards
      * @return mixed
      */
     public function handle(Request $request, Closure $next, ...$guards)
     {
-        $guards = empty($guards) ? [null] : $guards;
 
-        foreach ($guards as $guard) {
-            //TODO ENUM
-            if (Auth::guard($guard)->check() && Auth::guard($guard)->user()->role == 'student') {
-                return redirect(RouteServiceProvider::HOME);
-            }
+        if(Auth::guard('student')->check())
+        {
+            return redirect(RouteServiceProvider::HOME);
         }
 
         return $next($request);

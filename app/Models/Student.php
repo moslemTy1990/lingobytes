@@ -4,9 +4,26 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Jetstream\HasProfilePhoto;
 
-class Student extends Model
-{
+
+class Student extends Authenticatable {
+
+    use HasProfilePhoto;
+    use Notifiable;
     use HasFactory;
-    protected $fillable = ['last_login','status'];
+
+    protected $fillable = [
+        'name',
+        'last_login',
+        'status',
+        'mobile',
+        'email',
+        'password',
+        'gender',
+        'age',
+        'status',
+    ];
 }
