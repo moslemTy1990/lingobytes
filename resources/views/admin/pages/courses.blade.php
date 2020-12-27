@@ -17,7 +17,7 @@
                     {{-- first row of inputs   --}}
                     <div class="row">
                         {{-- Course Name --}}
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Name"
@@ -27,18 +27,19 @@
                                 @enderror
                             </div>
                         </div>
-                    {{-- Registration Deadline --}}
-                        <div class="col-md-4">
+                        {{-- Registration Deadline --}}
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label for="reg-deadline">Registration Deadline</label>
-                                <input type="datetime-local" class="form-control" id="reg-deadline" name="registration_deadline">
+                                <input type="datetime-local" class="form-control" id="reg-deadline"
+                                       name="registration_deadline">
                                 @error('registration_deadline')
                                 <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                 @enderror
                             </div>
                         </div>
                         {{--Start Date--}}
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label for="start-date">Start Date</label>
                                 <input type="datetime-local" class="form-control" id="start-date" name="start_date">
@@ -47,12 +48,8 @@
                                 @enderror
                             </div>
                         </div>
-                    </div>
-                    {{-- second row of inputs   --}}
-                    <div class="row">
-
                         {{-- End Date --}}
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label for="end-date">End Date</label>
                                 <input type="datetime-local" class="form-control" id="end-date" name="end_date">
@@ -62,9 +59,44 @@
                             </div>
                         </div>
                     </div>
-                    {{-- third row of inputs   --}}
-                    <div class="row justify-content-center">
 
+
+
+                    {{-- third row of inputs   --}}
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-outline">
+                                <div class="card-header">
+                                    <h3 class="card-title">
+                                        Description
+                                    </h3>
+                                    <!-- tools box -->
+                                    <div class="card-tools bg-gradient-gray">
+                                        <button type="button" class="btn btn-tool btn-sm" data-card-widget="collapse" data-toggle="tooltip"
+                                                title="Collapse">
+                                            <i class="fas fa-minus"></i></button>
+                                    </div>
+                                    <!-- /. tools -->
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body pad">
+                                    <div class="mb-3">
+                                        <textarea class="textarea" placeholder="Place some text here" name="description"
+                                             style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                                        @error('description')
+                                        <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
+                                        @enderror
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col-->
+                    </div>
+
+
+
+                    {{-- 4th row of inputs   --}}
+                    <div class="row justify-content-center">
                         {{-- bottuns --}}
                         <div class="col-md-4">
                             <div class="form-group row">
@@ -121,9 +153,12 @@
                                     <td>{{ $course->end_date }}</td>
                                     <td>{{ $course->registration_deadline }}</td>
                                     <td>
-                                        <a href="{{route('material', $course->id)}}" class="btn btn-success btn-s">Add Material</a>
-                                        <a href="#" class="btn btn-default btn-s" data-toggle="modal" data-target="#add_material">Browse</a>
-                                        <a href="#" class="btn btn-info btn-s" data-toggle="modal" data-target="#show_material">View</a>
+                                        <a href="{{route('material', $course->id)}}" class="btn btn-success btn-s">Add
+                                            Material</a>
+                                        <a href="#" class="btn btn-default btn-s" data-toggle="modal"
+                                           data-target="#add_material">Browse</a>
+                                        <a href="#" class="btn btn-info btn-s" data-toggle="modal"
+                                           data-target="#show_material">View</a>
                                     </td>
                                     <td>
                                         <a href="#" class="btn btn-outline-info btn-s">Edit</a>
@@ -136,9 +171,9 @@
                             </tbody>
                         </table>
 
-
-
-                        <div class="modal fade" id="add_material" tabindex="-1" role="dialog" aria-labelledby="add_material" aria-hidden="true">
+                        {{--Add Material On the course page--}}
+                        <div class="modal fade" id="add_material" tabindex="-1" role="dialog"
+                             aria-labelledby="add_material" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     {{-- HEADER--}}
@@ -154,19 +189,22 @@
                                         <div class="form-group">
                                             <label for="photoInput">Profile photo</label>
                                             <div class="input-group">
-                                                <input type="file" class="form-control-file" id="photoInput" name="photoInput">
+                                                <input type="file" class="form-control-file" id="photoInput"
+                                                       name="photoInput">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                        </button>
                                         <button type="button" class="btn btn-primary">Save changes</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="modal fade" id="show_material" tabindex="-1" role="dialog" aria-labelledby="show_material" aria-hidden="true">
+                        {{--View Material on the course page--}}
+                        <div class="modal fade" id="show_material" tabindex="-1" role="dialog"
+                             aria-labelledby="show_material" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     {{-- HEADER--}}
@@ -182,7 +220,8 @@
                                         ...
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -197,3 +236,11 @@
         <!-- /.row -->
     </div>
 @endsection
+@section('scripts')
+    <script>
+        $(function () {
+            // Summernote
+            $('.textarea').summernote()
+        })
+    </script>
+@stop

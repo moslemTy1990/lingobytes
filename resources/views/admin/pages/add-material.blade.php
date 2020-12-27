@@ -32,8 +32,11 @@
                                 <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                 @enderror
                             </div>
+                            <div class="row justify-content-center">
+
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
                             </div>
                         </div>
                     </form>

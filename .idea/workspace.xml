@@ -9,21 +9,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea95ac5-aaac-4217-a9bc-7d6370ca8b09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/js/bs-custom-file-input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bs-custom-file-input.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bs-custom-file-input.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bs-custom-file-input.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/add-material.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/font/summernote.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/summernote/font/summernote.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/summernote/font/summernote.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/summernote/font/summernote.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/summernote/font/summernote.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CourseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/StudentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/TeacherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/TeacherController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-layout/main-Layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-layout/main-Layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_12_195902_create_courses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_195902_create_courses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/add-material.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/add-material.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/courses.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/courses.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/student.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/student.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/teacher.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/teacher.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/Admin/admin-routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Admin/admin-routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +173,7 @@
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css/font" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -191,11 +187,11 @@
       <recent name="C:\laragon\www\lingobytes\public\css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\lingobytes\public\css\font" />
+      <recent name="C:\laragon\www\lingobytes\public\js\summernote" />
       <recent name="C:\laragon\www\lingobytes\public\js" />
       <recent name="C:\laragon\www\lingobytes\resources\views\admin\pages" />
       <recent name="C:\laragon\www\lingobytes\public\webfonts" />
-      <recent name="C:\laragon\www\lingobytes\public\css" />
-      <recent name="C:\laragon\www\lingobytes\resources\js" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.login.blade.php">
@@ -240,7 +236,7 @@
       <workItem from="1607248800850" duration="85266000" />
       <workItem from="1608456996460" duration="4422000" />
       <workItem from="1608720832256" duration="38597000" />
-      <workItem from="1608979351787" duration="18740000" />
+      <workItem from="1608979351787" duration="27331000" />
     </task>
     <task id="LOCAL-00001" summary="Developement 11/14/2020&#10;- initial Migrations are created. &#10;- initial relation between migrations are done">
       <created>1605388403560</created>
@@ -375,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608937164147</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Development 12/27/2020&#10;&#10;- changing Create method to store&#10;- adding course material controller &#10;- course material model and the relationship in course model&#10;- creating course material table and migration&#10;- Js file for input file loader&#10;- adding add material view&#10;- adding the links in the course view to material view">
+      <created>1609061459310</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1609061459311</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,7 +441,8 @@
     <MESSAGE value="Development 12/25/2020&#10;---------WW1------------&#10;- laravel debugger&#10;- Student guard(for students)&#10;- users guard(for admin and teacher)&#10;- removing teacher Model and table&#10;- changing the middle ware and other configurations for the new auth method" />
     <MESSAGE value="Development 12/25/2020&#10;&#10;- admin Guest is implemented" />
     <MESSAGE value="Development 12/25/2020&#10;&#10;- adding courses in the course controller&#10;- querying the courses to show in the list&#10;- adding a relationship for users&#10;- adding status and last login for users" />
-    <option name="LAST_COMMIT_MESSAGE" value="Development 12/25/2020&#10;&#10;- adding courses in the course controller&#10;- querying the courses to show in the list&#10;- adding a relationship for users&#10;- adding status and last login for users" />
+    <MESSAGE value="Development 12/27/2020&#10;&#10;- changing Create method to store&#10;- adding course material controller &#10;- course material model and the relationship in course model&#10;- creating course material table and migration&#10;- Js file for input file loader&#10;- adding add material view&#10;- adding the links in the course view to material view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Development 12/27/2020&#10;&#10;- changing Create method to store&#10;- adding course material controller &#10;- course material model and the relationship in course model&#10;- creating course material table and migration&#10;- Js file for input file loader&#10;- adding add material view&#10;- adding the links in the course view to material view" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1241" y="842" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607372291438">
@@ -450,10 +454,10 @@
     </state>
     <state x="-1230" y="795" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608917761543" />
     <state x="460" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606418832337" />
-    <state x="-1335" y="522" key="CommitChangelistDialog2" timestamp="1608937163579">
+    <state x="-1335" y="522" key="CommitChangelistDialog2" timestamp="1609061458000">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1335" y="522" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608937163579" />
+    <state x="-1335" y="522" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609061458000" />
     <state x="390" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607855807320" />
     <state x="422" y="95" key="FileChooserDialogImpl" timestamp="1607855925909">
       <screen x="0" y="0" width="1280" height="680" />
@@ -523,10 +527,10 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1646" y="636" width="1202" height="832" key="SettingsEditor/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609014402885" />
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1608937182583">
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1609061496273">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608937182583" />
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609061496273" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607855901591" />
     <state x="411" y="148" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1606578986989">
       <screen x="0" y="0" width="1280" height="680" />
@@ -548,10 +552,10 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1304" y="501" key="run.anything.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609022538865" />
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1609022615978">
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1609092549967">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609022615978" />
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609092549967" />
     <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1607856823494" />
   </component>
   <component name="XDebuggerManager">

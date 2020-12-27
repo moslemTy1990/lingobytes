@@ -20,6 +20,7 @@ class Course extends Model
         'name',
         'start_date',
         'end_date',
-        'registration_deadline'
+        'registration_deadline',
+        'description'
     ];
 }

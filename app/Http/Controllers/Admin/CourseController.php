@@ -23,6 +23,7 @@ class CourseController extends Controller {
                 'registration_deadline'=>['date','required'],
                 'start_date'=>['date','required','after:registration_deadline'],
                 'end_date'=>['date','required','after:start_date'],
+                'description'=>['required']
             ]);
 
          auth()->guard('web')->user()->courses()->create($validate);

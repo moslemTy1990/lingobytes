@@ -19,6 +19,7 @@ class CreateCoursesTable extends Migration
             $table->timestamp('start_date')->nullable();
             $table->timestamp('end_date')->nullable();
             $table->timestamp('registration_deadline')->nullable();
+            $table->longText('description')->nullable();
             $table->foreignId('user_id');
             $table->timestamps();
 
