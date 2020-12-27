@@ -9,16 +9,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea95ac5-aaac-4217-a9bc-7d6370ca8b09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/js/bs-custom-file-input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bs-custom-file-input.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bs-custom-file-input.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bs-custom-file-input.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/add-material.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CourseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/StudentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/TeacherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/TeacherController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_12_195902_create_courses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_195902_create_courses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-layout/main-Layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-layout/main-Layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/courses.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/courses.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/student.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/student.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/teacher.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/teacher.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/Admin/admin-routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Admin/admin-routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,9 +177,9 @@
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -186,10 +191,10 @@
       <recent name="C:\laragon\www\lingobytes\public\css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\lingobytes\public\js" />
       <recent name="C:\laragon\www\lingobytes\resources\views\admin\pages" />
       <recent name="C:\laragon\www\lingobytes\public\webfonts" />
       <recent name="C:\laragon\www\lingobytes\public\css" />
-      <recent name="C:\laragon\www\lingobytes\public\js" />
       <recent name="C:\laragon\www\lingobytes\resources\js" />
     </key>
   </component>
@@ -234,7 +239,8 @@
       <workItem from="1607183775890" duration="247000" />
       <workItem from="1607248800850" duration="85266000" />
       <workItem from="1608456996460" duration="4422000" />
-      <workItem from="1608720832256" duration="29215000" />
+      <workItem from="1608720832256" duration="38597000" />
+      <workItem from="1608979351787" duration="18740000" />
     </task>
     <task id="LOCAL-00001" summary="Developement 11/14/2020&#10;- initial Migrations are created. &#10;- initial relation between migrations are done">
       <created>1605388403560</created>
@@ -362,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608916525873</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Development 12/25/2020&#10;&#10;- adding courses in the course controller&#10;- querying the courses to show in the list&#10;- adding a relationship for users&#10;- adding status and last login for users">
+      <created>1608937164146</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1608937164147</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +437,8 @@
     <MESSAGE value="Development 12/23/2020&#10;- content route&#10;- file manager&#10;- content view" />
     <MESSAGE value="Development 12/25/2020&#10;---------WW1------------&#10;- laravel debugger&#10;- Student guard(for students)&#10;- users guard(for admin and teacher)&#10;- removing teacher Model and table&#10;- changing the middle ware and other configurations for the new auth method" />
     <MESSAGE value="Development 12/25/2020&#10;&#10;- admin Guest is implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Development 12/25/2020&#10;&#10;- admin Guest is implemented" />
+    <MESSAGE value="Development 12/25/2020&#10;&#10;- adding courses in the course controller&#10;- querying the courses to show in the list&#10;- adding a relationship for users&#10;- adding status and last login for users" />
+    <option name="LAST_COMMIT_MESSAGE" value="Development 12/25/2020&#10;&#10;- adding courses in the course controller&#10;- querying the courses to show in the list&#10;- adding a relationship for users&#10;- adding status and last login for users" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1241" y="842" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607372291438">
@@ -436,31 +450,67 @@
     </state>
     <state x="-1230" y="795" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608917761543" />
     <state x="460" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606418832337" />
-    <state x="-1335" y="522" key="CommitChangelistDialog2" timestamp="1608916525408">
+    <state x="-1335" y="522" key="CommitChangelistDialog2" timestamp="1608937163579">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1335" y="522" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608916525408" />
+    <state x="-1335" y="522" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608937163579" />
     <state x="390" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607855807320" />
     <state x="422" y="95" key="FileChooserDialogImpl" timestamp="1607855925909">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="422" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1607855925909" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1605211419687">
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1608971698073">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605211419687" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1605211419687">
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608971698073" />
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.522.1920.1040@0.0.1280.680" timestamp="1608971058597" />
+    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1608971698072">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605211419687" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1605211419687">
+    <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608971698072" />
+    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680/-1920.522.1920.1040@0.0.1280.680" timestamp="1608971058597" />
+    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1608971698072">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605211419687" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1605211419687">
+    <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608971698072" />
+    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680/-1920.522.1920.1040@0.0.1280.680" timestamp="1608971058597" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1608971698072">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605211419687" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608971698072" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680/-1920.522.1920.1040@0.0.1280.680" timestamp="1608971058597" />
+    <state width="1877" height="278" key="GridCell.Tab.1.bottom" timestamp="1608971698073">
+      <screen x="-1920" y="522" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.1.bottom/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608971698073" />
+    <state width="1877" height="278" key="GridCell.Tab.1.center" timestamp="1608971698073">
+      <screen x="-1920" y="522" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.1.center/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608971698073" />
+    <state width="1877" height="278" key="GridCell.Tab.1.left" timestamp="1608971698073">
+      <screen x="-1920" y="522" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.1.left/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608971698073" />
+    <state width="1877" height="278" key="GridCell.Tab.1.right" timestamp="1608971698073">
+      <screen x="-1920" y="522" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.1.right/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608971698073" />
+    <state width="1877" height="278" key="GridCell.Tab.2.bottom" timestamp="1608971698073">
+      <screen x="-1920" y="522" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.2.bottom/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608971698073" />
+    <state width="1877" height="278" key="GridCell.Tab.2.center" timestamp="1608971698073">
+      <screen x="-1920" y="522" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.2.center/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608971698073" />
+    <state width="1877" height="278" key="GridCell.Tab.2.left" timestamp="1608971698073">
+      <screen x="-1920" y="522" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.2.left/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608971698073" />
+    <state width="1877" height="278" key="GridCell.Tab.2.right" timestamp="1608971698073">
+      <screen x="-1920" y="522" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.2.right/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608971698073" />
     <state x="-1184" y="763" key="NewPhpClassDialog" timestamp="1606248488604">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
@@ -469,14 +519,14 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1152" y="964" key="NewPhpFileDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1606916188167" />
-    <state x="-1646" y="636" width="1202" height="832" key="SettingsEditor" timestamp="1608932295148">
+    <state x="-1646" y="636" width="1202" height="832" key="SettingsEditor" timestamp="1609014402885">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1646" y="636" width="1202" height="832" key="SettingsEditor/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608932295148" />
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1608916593509">
+    <state x="-1646" y="636" width="1202" height="832" key="SettingsEditor/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609014402885" />
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1608937182583">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608916593509" />
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608937182583" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607855901591" />
     <state x="411" y="148" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1606578986989">
       <screen x="0" y="0" width="1280" height="680" />
@@ -494,14 +544,14 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1227" y="942" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605201518605" />
-    <state x="-1304" y="501" key="run.anything.popup" timestamp="1605563861659">
+    <state x="-1304" y="501" key="run.anything.popup" timestamp="1609022538865">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1304" y="501" key="run.anything.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1605563861659" />
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1608936518853">
+    <state x="-1304" y="501" key="run.anything.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609022538865" />
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1609022615978">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608936518853" />
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609022615978" />
     <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1607856823494" />
   </component>
   <component name="XDebuggerManager">

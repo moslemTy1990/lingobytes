@@ -58,11 +58,9 @@
                                     <td>{{$student->student ? $student->student->last_login : ''}}</td>
                                     <td>{{$student->created_at}}</td>
                                     <td>
-                                        <div class="btn-group">
                                             <a href="#" class="btn btn-outline-info">Edit</a>
                                             <a href="{{route('activate-student',$student->id)}}" class="btn btn-outline-warning">{{$student->status == 1 ? 'De-Activate' : 'Activate'}}</a>
                                             <a href="{{route('delete-student',$student->id)}}" class="btn btn-outline-danger">Delete</a>
-                                        </div>
                                     </td>
                                 </tr>
                             @endforeach

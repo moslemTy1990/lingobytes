@@ -170,13 +170,11 @@
                                     <td>{{$teacher->status==1?'Active' : 'De-Active'}}</td>
                                     <td>{{$teacher->last_login}}</td>
                                     <td>
-                                        <div class="btn-group">
                                             <a href="#" class="btn btn-outline-info">Edit</a>
                                             <a href="{{route('activate-teacher', $teacher->id)}}"
                                                class="btn btn-outline-warning">{{$teacher->status == 1 ? 'De-Activate' : 'Activate'}}</a>
                                             <a href="{{route('delete-teacher', $teacher->id)}}"
                                                class="btn btn-outline-danger">Delete</a>
-                                        </div>
                                     </td>
                                 </tr>
                             @endforeach

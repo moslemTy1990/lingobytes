@@ -15,7 +15,8 @@ class CourseController extends Controller {
         return view('admin.pages.courses' , compact('courses'));
     }
 
-    public function create(Request $request){
+    public function store(Request $request){
+
         $validate = $request->validate(
             [
                 'name'=> ['required','max:12','min:4'],

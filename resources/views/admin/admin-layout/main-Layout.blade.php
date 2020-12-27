@@ -62,6 +62,13 @@
     <script src="{{asset('js/adminlte.js')}}"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="{{asset('js/demo.js')}}"></script>
+    <script src="{{asset('js/bs-custom-file-input.min.js')}}"></script>
+    <script type="text/javascript">
+        $(document)
+            .ready(function () {
+                bsCustomFileInput.init()
+            })
+    </script>
 
     @yield('scripts')
 

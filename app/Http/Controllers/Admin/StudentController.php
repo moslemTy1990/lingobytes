@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
     function index(){
+        //TODO check the students of the related course and delete them from the course not from the system
         $students = Student::all();
         return view('admin.pages.student',compact('students'));
     }

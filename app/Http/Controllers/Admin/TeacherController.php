@@ -42,7 +42,7 @@ class TeacherController extends Controller {
         }
     }
 
-    //    create teacher //TOTO FLASH MEssages
+    //    create teacher //TODO FLASH MEssages
     function create(Request $request)
     {
         $validate = $request->validate(

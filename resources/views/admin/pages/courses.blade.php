@@ -121,21 +121,73 @@
                                     <td>{{ $course->end_date }}</td>
                                     <td>{{ $course->registration_deadline }}</td>
                                     <td>
-                                        {{-- TODO: check this out--}}
-                                        SHOULD BE IMPLEMENTED
+                                        <a href="{{route('material', $course->id)}}" class="btn btn-success btn-s">Add Material</a>
+                                        <a href="#" class="btn btn-default btn-s" data-toggle="modal" data-target="#add_material">Browse</a>
+                                        <a href="#" class="btn btn-info btn-s" data-toggle="modal" data-target="#show_material">View</a>
                                     </td>
                                     <td>
-                                        <div class="btn-group">
-                                            <a href="#" class="btn btn-outline-info">Edit</a>
-                                            <a href="#" class="btn btn-outline-warning">De-Activate</a>
-                                            <a href="#" class="btn btn-outline-danger">Delete</a>
-                                        </div>
+                                        <a href="#" class="btn btn-outline-info btn-s">Edit</a>
+                                        <a href="#" class="btn btn-outline-warning btn-s">De-Activate</a>
+                                        <a href="#" class="btn btn-outline-danger btn-s">Delete</a>
                                     </td>
                                 </tr>
                             @endforeach
 
                             </tbody>
                         </table>
+
+
+
+                        <div class="modal fade" id="add_material" tabindex="-1" role="dialog" aria-labelledby="add_material" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    {{-- HEADER--}}
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="addModalLabel">Import Material</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    {{-- /HEADER--}}
+
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="photoInput">Profile photo</label>
+                                            <div class="input-group">
+                                                <input type="file" class="form-control-file" id="photoInput" name="photoInput">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="show_material" tabindex="-1" role="dialog" aria-labelledby="show_material" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    {{-- HEADER--}}
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="showModalLabel">Materials</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    {{-- /HEADER--}}
+
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <!-- /.card-body -->
                 </div>

@@ -5,6 +5,8 @@ use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\Admin\StudentController;
 use App\Http\Controllers\Admin\TeacherController;
 use App\Http\Controllers\AdminController;
+
+use App\Http\Controllers\Admin\CourseMaterial;
 use Illuminate\Support\Facades\Route;
 
 //Routs fot showing the admin panel and doing the login
@@ -32,7 +34,12 @@ Route::group(['middleware' => 'admin'], function () {
 
     // Course related routes
     Route::get('/courses', [CourseController::class,'index'])->name('courses');
-    Route::post('/courses', [CourseController::class,'create'])->name('add-course');
+    Route::post('/courses', [CourseController::class,'store'])->name('add-course');
+
+
+  //courseMaterials
+    Route::get('/course/{id}', [CourseMaterial::class,'index'])->name('material');
+    Route::Post('/course/{id}', [CourseMaterial::class,'store'])->name('add-material');
 
 
 
