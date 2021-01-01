@@ -32,7 +32,7 @@
                             <div class="form-group">
                                 <label for="reg-deadline">Registration Deadline</label>
                                 <input type="datetime-local" class="form-control" id="reg-deadline"
-                                       name="registration_deadline">
+                                       name="registration_deadline" value="{{old('registration_deadline')}}" required>
                                 @error('registration_deadline')
                                 <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                 @enderror
@@ -42,7 +42,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label for="start-date">Start Date</label>
-                                <input type="datetime-local" class="form-control" id="start-date" name="start_date">
+                                <input type="datetime-local" class="form-control" id="start-date" name="start_date" value="{{old('start_date')}}" required>
                                 @error('start_date')
                                 <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                 @enderror
@@ -52,7 +52,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label for="end-date">End Date</label>
-                                <input type="datetime-local" class="form-control" id="end-date" name="end_date">
+                                <input type="datetime-local" class="form-control" id="end-date" name="end_date" value="{{old('end_date')}}" required>
                                 @error('end_date')
                                 <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                 @enderror
@@ -82,7 +82,7 @@
                                 <div class="card-body pad">
                                     <div class="mb-3">
                                         <textarea class="textarea" placeholder="Place some text here" name="description"
-                                             style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                                             style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" >{{old('description')}}</textarea>
                                         @error('description')
                                         <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                         @enderror
@@ -132,7 +132,7 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body table-responsive p-0">
-                        <table class="table table-hover text-nowrap">
+                        <table class="table table-hover text-nowrap text-center">
                             <thead>
                             <tr>
                                 <th>ID</th>
@@ -141,6 +141,7 @@
                                 <th>End Date</th>
                                 <th>Registration Deadline</th>
                                 <th>Material</th>
+                                <th>Exercise</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
@@ -153,13 +154,12 @@
                                     <td>{{ $course->end_date }}</td>
                                     <td>{{ $course->registration_deadline }}</td>
                                     <td>
-                                        <a href="{{route('material', $course->id)}}" class="btn btn-success btn-s">Add
-                                            Material</a>
-                                        <a href="#" class="btn btn-default btn-s" data-toggle="modal"
-                                           data-target="#add_material">Browse</a>
+                                        <a href="{{route('material', $course->id)}}" class="btn btn-success btn-s">Add</a>
                                         <a href="#" class="btn btn-info btn-s" data-toggle="modal"
                                            data-target="#show_material">View</a>
                                     </td>
+                                    <td><a href="{{route('exercise', $course->id)}}" class="btn btn-outline-success btn-s">Add</a></td>
+
                                     <td>
                                         <a href="#" class="btn btn-outline-info btn-s">Edit</a>
                                         <a href="#" class="btn btn-outline-warning btn-s">De-Activate</a>
@@ -171,37 +171,6 @@
                             </tbody>
                         </table>
 
-                        {{--Add Material On the course page--}}
-                        <div class="modal fade" id="add_material" tabindex="-1" role="dialog"
-                             aria-labelledby="add_material" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    {{-- HEADER--}}
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="addModalLabel">Import Material</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    {{-- /HEADER--}}
-
-                                    <div class="modal-body">
-                                        <div class="form-group">
-                                            <label for="photoInput">Profile photo</label>
-                                            <div class="input-group">
-                                                <input type="file" class="form-control-file" id="photoInput"
-                                                       name="photoInput">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
-                                        </button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         {{--View Material on the course page--}}
                         <div class="modal fade" id="show_material" tabindex="-1" role="dialog"
                              aria-labelledby="show_material" aria-hidden="true">

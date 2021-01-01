@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\ContentController;
 use App\Http\Controllers\Admin\CourseController;
+use App\Http\Controllers\Admin\ExerciseController;
 use App\Http\Controllers\Admin\StudentController;
 use App\Http\Controllers\Admin\TeacherController;
 use App\Http\Controllers\AdminController;
@@ -37,12 +38,12 @@ Route::group(['middleware' => 'admin'], function () {
     Route::post('/courses', [CourseController::class,'store'])->name('add-course');
 
 
-  //courseMaterials
+  //course materials
     Route::get('/course/{id}', [CourseMaterial::class,'index'])->name('material');
     Route::Post('/course/{id}', [CourseMaterial::class,'store'])->name('add-material');
 
-
-
+//course exercises
+    Route::get('/course/{id}/exercise', [ExerciseController::class,'index'])->name('exercise');
 
 // content routes
     Route::get('/content', [ContentController::class,'index'])->name('contents');
