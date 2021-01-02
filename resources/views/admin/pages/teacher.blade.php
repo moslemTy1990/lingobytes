@@ -94,10 +94,12 @@
                     <div class="row">
                         {{-- profile photo --}}
                         <div class="col-md-4">
+
                             <div class="form-group">
-                                <label for="photoInput">Profile photo</label>
-                                <div class="input-group">
-                                    <input type="file" class="form-control-file" id="photoInput" name="photoInput">
+                             <label for="photoInput">Profile Photo</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="photoInput" name="photoInput">
+                                    <label class="custom-file-label" for="photoInput">Choose Profile Photo</label>
                                     @error('photoInput')
                                     <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                     @enderror
@@ -106,8 +108,8 @@
 
                         </div>
                         {{-- bottuns --}}
-                        <div class="col-md-4">
-                            <div class="form-group row">
+                        <div class="col-md-4 mt-4 ml-5">
+                            <div class="form-group">
                                 <div class="col-sm-10 mt-2">
                                     <button type="reset" class="btn btn-outline-secondary mr-3">Clear</button>
                                     <button type="submit" class="btn btn-outline-success">Save</button>

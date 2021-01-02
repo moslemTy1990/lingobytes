@@ -9,12 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea95ac5-aaac-4217-a9bc-7d6370ca8b09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/add-exercise.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/questioninput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/select2.full.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/select2.full.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/courses.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/courses.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/student.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/student.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/Admin/admin-routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Admin/admin-routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/add-exercise.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/add-exercise.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/teacher.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/teacher.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +24,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -169,25 +176,25 @@
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css/font" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\lingobytes\public\js" />
+      <recent name="C:\laragon\www\lingobytes\public\css\font" />
+      <recent name="C:\laragon\www\lingobytes\public\js\summernote" />
+      <recent name="C:\laragon\www\lingobytes\resources\views\admin\pages" />
+      <recent name="C:\laragon\www\lingobytes\public\webfonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\lingobytes\app\Http\Controllers" />
       <recent name="C:\laragon\www\lingobytes\app\Http\Controllers\Admin" />
       <recent name="C:\laragon\www\lingobytes\resources\views\admin\admin-dashboard-pages" />
       <recent name="C:\laragon\www\lingobytes\public\js" />
       <recent name="C:\laragon\www\lingobytes\public\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\lingobytes\public\css\font" />
-      <recent name="C:\laragon\www\lingobytes\public\js\summernote" />
-      <recent name="C:\laragon\www\lingobytes\public\js" />
-      <recent name="C:\laragon\www\lingobytes\resources\views\admin\pages" />
-      <recent name="C:\laragon\www\lingobytes\public\webfonts" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.login.blade.php">
@@ -233,7 +240,7 @@
       <workItem from="1608456996460" duration="4422000" />
       <workItem from="1608720832256" duration="38597000" />
       <workItem from="1608979351787" duration="34516000" />
-      <workItem from="1609513535846" duration="7246000" />
+      <workItem from="1609513535846" duration="36735000" />
     </task>
     <task id="LOCAL-00001" summary="Developement 11/14/2020&#10;- initial Migrations are created. &#10;- initial relation between migrations are done">
       <created>1605388403560</created>
@@ -389,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609108720106</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Development 01/01/2021&#10;&#10;- added Exercise controller &#10;- added exercise bade view &#10;- new route for exercise of a course">
+      <created>1609524630982</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1609524630982</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +469,8 @@
     <MESSAGE value="Development 12/27/2020&#10;&#10;- changing Create method to store&#10;- adding course material controller &#10;- course material model and the relationship in course model&#10;- creating course material table and migration&#10;- Js file for input file loader&#10;- adding add material view&#10;- adding the links in the course view to material view" />
     <MESSAGE value="Development 12/27/2020&#10;&#10;- adding the description to the course model and view and controller,&#10;- adding the text editor for the description to in the view.&#10;- adding JS files related to the text editor&#10;-" />
     <MESSAGE value="Development 12/27/2020&#10;&#10;- adding ExamType, Answer, Question tables and models&#10;-" />
-    <option name="LAST_COMMIT_MESSAGE" value="Development 12/27/2020&#10;&#10;- adding ExamType, Answer, Question tables and models&#10;-" />
+    <MESSAGE value="Development 01/01/2021&#10;&#10;- added Exercise controller &#10;- added exercise bade view &#10;- new route for exercise of a course" />
+    <option name="LAST_COMMIT_MESSAGE" value="Development 01/01/2021&#10;&#10;- added Exercise controller &#10;- added exercise bade view &#10;- new route for exercise of a course" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1241" y="842" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607372291438">
@@ -467,10 +482,10 @@
     </state>
     <state x="-1230" y="795" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1608917761543" />
     <state x="460" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606418832337" />
-    <state x="-1335" y="522" key="CommitChangelistDialog2" timestamp="1609108718257">
+    <state x="-1335" y="522" key="CommitChangelistDialog2" timestamp="1609524629395">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1335" y="522" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609108718257" />
+    <state x="-1335" y="522" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609524629395" />
     <state x="390" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607855807320" />
     <state x="422" y="95" key="FileChooserDialogImpl" timestamp="1607855925909">
       <screen x="0" y="0" width="1280" height="680" />
@@ -540,10 +555,10 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1646" y="636" width="1202" height="832" key="SettingsEditor/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609014402885" />
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1609108740880">
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1609524647940">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609108740880" />
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609524647940" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607855901591" />
     <state x="411" y="148" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1606578986989">
       <screen x="0" y="0" width="1280" height="680" />
@@ -565,10 +580,10 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1304" y="501" key="run.anything.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609022538865" />
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1609522612645">
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1609580138299">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609522612645" />
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609580138299" />
     <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1607856823494" />
   </component>
   <component name="XDebuggerManager">
