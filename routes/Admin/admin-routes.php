@@ -44,8 +44,9 @@ Route::group(['middleware' => 'admin'], function () {
 
 //course exercises
     Route::get('/course/{id}/exercise', [ExerciseController::class,'index'])->name('exercise');
+    Route::post('/course/{id}/exercise', [ExerciseController::class,'store'])->name('store-exercise');
 
-// content routes
+// content routes   (File manager)
     Route::get('/content', [ContentController::class,'index'])->name('contents');
 
 

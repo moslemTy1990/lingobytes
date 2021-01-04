@@ -12,7 +12,7 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body">
-                <form action="" method="post" enctype="multipart/form-data">
+                <form action="{{route('store-exercise',$course->id)}}" method="post" enctype="multipart/form-data">
                     @csrf
                     {{-- first row of inputs   --}}
                     <div class="row justify-content-around">
@@ -20,7 +20,8 @@
                             <div class="form-group">
                                 <div class="custom-control custom-radio">
                                     <input class="custom-control-input" type="radio" id="Radio2"
-                                           name="exercise_type" checked>
+                                           name="exercise_type" value="class" checked>
+
                                     <label for="Radio2" class="custom-control-label">Online Exercise</label>
                                 </div>
                             </div>
@@ -29,14 +30,17 @@
                             <div class="form-group">
                                 <div class="custom-control custom-radio">
                                     <input class="custom-control-input" type="radio" id="Radio1"
-                                           name="exercise_type">
+                                           name="exercise_type" value="home">
+
                                     <label for="Radio1" class="custom-control-label">Home Work</label>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-
+                    @error('exercise_type')
+                    <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
+                    @enderror
                     {{-- 2nd row --}}
                     <div class="row">
                         {{-- question title --}}
@@ -46,7 +50,7 @@
                                 <input type="text" class="form-control" id="title" name="title" placeholder="Title"
                                        required autofocus value="{{old('title')}}">
                                 @error('title')
-                                <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
+                                 <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                 @enderror
                             </div>
                         </div>
@@ -59,6 +63,9 @@
                                     <option value="multiple">Multiple</option>
                                     <option value="voice">Voice</option>
                                 </select>
+                                @error('type')
+                                <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
+                                @enderror
                             </div>
                         </div>
 
@@ -78,6 +85,13 @@
                     <div class="row" id="htmlForQtype">
 
                     </div>
+                    @error('voiceInput')
+                    <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
+                    @enderror
+                    @error('choices')
+                    <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
+                    @enderror
+
                     {{-- 3rd row --}}
                     <div class="row">
                         {{--QUESTION TYPE --}}

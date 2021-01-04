@@ -61,7 +61,7 @@ $(document).ready(function () {
         if (multipleOptionsTextBox.val().trim()!==''){
             $("ul#multipleOptions").append("<li>\n" +
                 "                                            <div class=\"bg-light text-lg\">\n" +
-                "                                                <input type=\"hidden\" value=\""+multipleOptionsTextBox.val()+"\" name=\"value[]\">\n" +
+                "                                                <input type=\"hidden\" value=\""+multipleOptionsTextBox.val()+"\" name=\"choices[]\">\n" +
                 "                                                <label for=\"todoCheck1\">" + multipleOptionsTextBox.val() + "</label>\n" +
                 "                                            <div class=\"tools\" id=\"deleteItem\">\n" +
                 "                                                <i class=\"fas fa-trash\" ></i>\n" +
