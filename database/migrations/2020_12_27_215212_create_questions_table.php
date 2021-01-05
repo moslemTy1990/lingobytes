@@ -15,18 +15,20 @@ class CreateQuestionsTable extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
-            $table->longText('title');
-            $table->integer('parent_id')->nullable();
-            $table->foreignId('exam_type_id');
             //TODO ENUM
-            $table->enum('question_type',['text','multiple_choice','voice','homework'])->default('text');
+            $table->string('exercise_type')->nullable();
+            $table->integer('parent_id')->nullable();
+            $table->foreignId('course_id');
+            $table->longText('title');
+            //TODO ENUM
+            $table->text('question_type')->nullable();
             $table->text('value')->nullable();
             //TODO ENUM
-            $table->enum('answer_type',['text','multiple_choice','voice','homework'])->default('text');
+            $table->text('answer_type'  )->nullable();
             $table->text('correct_answer')->nullable();
             $table->timestamps();
 
-            $table->foreign('exam_type_id')->references('id')->on('exam_types')->onDelete('cascade');
+            $table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');
         });
     }
 

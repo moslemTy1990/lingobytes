@@ -57,13 +57,13 @@
                         {{--QUESTION TYPE --}}
                         <div class="col-md-2">
                             <div class="form-group">
-                                <label for="type">Type</label>
-                                <select class="form-control" style="width: 100%;" required name="type" id="type">
+                                <label for="question_type">Type</label>
+                                <select class="form-control" style="width: 100%;" required name="question_type" id="question_type">
                                     <option selected="selected" value="text">Text</option>
                                     <option value="multiple">Multiple</option>
                                     <option value="voice">Voice</option>
                                 </select>
-                                @error('type')
+                                @error('question_type')
                                 <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                 @enderror
                             </div>
@@ -97,11 +97,10 @@
                         {{--QUESTION TYPE --}}
                         <div class="col-md-2">
                             <div class="form-group">
-                                <label for="ans_type">Answer Type</label>
-                                <select class="form-control" style="width: 100%;" required name="ans_type"
-                                        id="ans_type">
+                                <label for="answer_type">Answer Type</label>
+                                <select class="form-control" style="width: 100%;" required name="answer_type"
+                                        id="answer_type">
                                     <option selected="selected" value="text">Text</option>
-                                    <option value="multiple">Multiple</option>
                                     <option value="voice">Voice</option>
                                 </select>
                             </div>
@@ -109,10 +108,10 @@
                         {{-- correct andwer --}}
                         <div class="col-md-8">
                             <div class="form-group">
-                                <label for="answer">Correct answer</label>
-                                <input type="text" class="form-control" id="answer" name="answer"
-                                       placeholder="Answer if needed" value="{{old('answer')}}">
-                                @error('answer')
+                                <label for="correct_answer">Correct answer</label>
+                                <input type="text" class="form-control" id="correct_answer" name="correct_answer"
+                                       placeholder="Answer if needed" value="{{old('correct_answer')}}">
+                                @error('correct_answer')
                                 <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
                                 @enderror
                             </div>

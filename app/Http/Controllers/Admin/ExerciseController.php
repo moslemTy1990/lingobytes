@@ -1,33 +1,48 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-
 use App\Http\Controllers\Controller;
-use App\Models\Course;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rule;
 
 class ExerciseController extends Controller
 {
-
     public function index($id)
     {
-        $course=Course::findOrFail($id);
+        $course=auth()->guard('web')->user()->courses()->findOrFail($id);
         return view('admin.pages.add-exercise',compact('course'));
     }
-    public function store(Request $request)
+    public function store(Request $request,$id)
     {
+//        return $path = storage_path();
+        $course=auth()->guard('web')->user()->courses()->findOrFail($id);
         $validated= $request->validate([
             'exercise_type' => ['required'],
             'title' => ['required','string'],
-            'type' => ['required',Rule::in(['text','multiple','voice'])],
-
-            'voiceInput'=>['required_if:type,voice','mimes:application/octet-stream,audio/mpeg,mpga,mp3,wav'],
-            'choices'=>['required_if:type,multiple'],
-
-            'ans_type'=>['required',Rule::in(['text','multiple','voice'])],
-            'answer'=>['required_if:ans_type,text','required_if:ans_type,multiple'],
+            'question_type' => ['required',Rule::in(['text','multiple','voice'])],
+            //TODO PHP INI FILE SIZE
+            'voiceInput'=>['required_if:question_type,voice','mimes:application/octet-stream,audio/mpeg,mpga,mp3,wav'],
+            'value'=>['required_if:question_type,multiple'],
+            'answer_type'=>['required',Rule::in(['text','voice'])],
+            'correct_answer'=>['required_if:answer_type,text'],
         ]);
-      //  return $request;
+
+        $path = null;
+       // return $request->all();
+        if($validated['question_type']=='voice'){
+            $path = Storage::disk('public')->put('podcasts',$validated['voiceInput']);
+        }
+
+        $course->questions()->create([
+                'exercise_type'=>$validated['exercise_type'],
+                'title'=>$validated['title'],
+                'question_type'=>$validated['question_type'],
+                'value'=> $validated['question_type'] == 'multiple' ? $validated['value'] : $path,
+                'answer_type'=>$validated['answer_type'],
+                'correct_answer'=>$validated['correct_answer'],
+            ]);
+
+        return back();
     }
 }

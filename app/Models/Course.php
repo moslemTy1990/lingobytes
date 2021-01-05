@@ -15,6 +15,11 @@ class Course extends Model
         return $this->hasMany(CourseMaterial::class);
     }
 
+    public function questions()
+    {
+        return $this->hasMany(Question::class);
+    }
+
 
     protected $fillable = [
         'name',

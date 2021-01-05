@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     var type = {
         text: "text",
         multiple: "multiple",
@@ -7,12 +8,13 @@ $(document).ready(function () {
     /*
     * get the elements by id and check the default value, also get the if of the div to add your code
     */
-    const selectElement = $("select#type");
+    const selectElement = $("#question_type");
     const defaultType = selectElement.val();
     const elementsToAdd = $("div#htmlForQtype");
         /*
      * conditions based on the default value of the select element
     */
+
     switch (defaultType) {
         case type.multiple:
              elementsToAdd.html(htmlForMultiple())
@@ -61,7 +63,7 @@ $(document).ready(function () {
         if (multipleOptionsTextBox.val().trim()!==''){
             $("ul#multipleOptions").append("<li>\n" +
                 "                                            <div class=\"bg-light text-lg\">\n" +
-                "                                                <input type=\"hidden\" value=\""+multipleOptionsTextBox.val()+"\" name=\"choices[]\">\n" +
+                "                                                <input type=\"hidden\" value=\""+multipleOptionsTextBox.val()+"\" name=\"value[]\">\n" +
                 "                                                <label for=\"todoCheck1\">" + multipleOptionsTextBox.val() + "</label>\n" +
                 "                                            <div class=\"tools\" id=\"deleteItem\">\n" +
                 "                                                <i class=\"fas fa-trash\" ></i>\n" +
