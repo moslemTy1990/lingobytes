@@ -19,7 +19,7 @@ class CourseController extends Controller {
 
         $validate = $request->validate(
             [
-                'name'=> ['required','max:12','min:4'],
+                'name'=> ['required','max:25','min:4'],
                 'registration_deadline'=>['date','required'],
                 'start_date'=>['date','required','after:registration_deadline'],
                 'end_date'=>['date','required','after:start_date'],

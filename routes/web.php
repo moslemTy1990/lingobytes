@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\TeacherController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -16,15 +17,13 @@ use Illuminate\Support\Facades\Route;
 |w
 */
 
-Route::get('/', function () {  return view('welcome'); });
+Route::get('/', [WelcomeController::class,'index'])->name('welcome');
 
-//admin routes
+//admin routes file
 Route::prefix('admin')->group(base_path('routes/Admin/admin-routes.php'));
 
-
-Route::middleware(['auth:student', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+//student routes file
+Route::prefix('student')->group(base_path('routes/Student/student-routes.php'));
 
 
 //TODO
@@ -35,5 +34,10 @@ Route::middleware(['auth:student', 'verified'])->get('/dashboard', function () {
  * ENUM creation for user types
  * TokenBased Auth
  * when doing the admin login from user login page, there is no information about the errors
+ * TODO course
+ * picture
+ * price
+ * brief
+ * level
  *
  * */

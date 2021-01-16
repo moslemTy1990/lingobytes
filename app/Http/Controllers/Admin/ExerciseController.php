@@ -11,11 +11,11 @@ class ExerciseController extends Controller
     public function index($id)
     {
         $course=auth()->guard('web')->user()->courses()->findOrFail($id);
+        $course->load('questions');
         return view('admin.pages.add-exercise',compact('course'));
     }
     public function store(Request $request,$id)
     {
-//        return $path = storage_path();
         $course=auth()->guard('web')->user()->courses()->findOrFail($id);
         $validated= $request->validate([
             'exercise_type' => ['required'],
@@ -29,7 +29,6 @@ class ExerciseController extends Controller
         ]);
 
         $path = null;
-       // return $request->all();
         if($validated['question_type']=='voice'){
             $path = Storage::disk('public')->put('podcasts',$validated['voiceInput']);
         }

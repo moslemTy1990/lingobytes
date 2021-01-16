@@ -139,6 +139,104 @@
             <div class="card-footer"></div>
         </div>
         <!-- /.row -->
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-gradient-gray ">
+                        <h3 class="card-title">Questions related to ................. course name</h3>
+                        <div class="card-tools">
+                            <div class="input-group input-group-sm" style="width: 150px;">
+                                <input type="text" name="table_search" class="form-control float-right"
+                                       placeholder="Search">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body table-responsive p-0">
+                        <table class="table table-hover text-nowrap text-center">
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Course Name</th>
+                                <th>Exercise Type</th>
+                                <th>Question Type</th>
+                                <th>Answer Type</th>
+                                <th>Value</th>
+                                <th>Correct Answer</th>
+                                <th>Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($course->questions as $question)
+                               <tr>
+                                    <td>{{$question->id}}</td>
+                                    <td>{{$question->title}}</td>
+                                   <td>{{$course->name}}</td>
+                                    <td>{{$question->exercise_type}}</td>
+                                    <td>{{$question->question_type}}</td>
+                                    <td>{{$question->answer_type}}</td>
+                                    <td class="text-center">
+                                        <ul class="{{$question->question_type=='text' ? '': 'list-group list-group-horizontal-sm'}}">
+                                            @if($question->question_type == 'text')
+                                                {{$question->value}}
+                                            @elseif($question->question_type == 'voice')
+                                                <li class="list-group-item">{{$question->value}}</li>
+                                            @else()
+                                            @foreach ($question['value'] as $value)
+                                                <li class="list-group-item">{{$value}}</li>
+                                            @endforeach
+                                            @endif
+                                        </ul>
+
+                                       </td>
+                                    <td>{{$question->correct_answer}}</td>
+
+                                    <td>
+                                        <a href="#" class="btn btn-outline-info btn-s">Edit</a>
+                                        <a href="#" class="btn btn-outline-danger btn-s">Delete</a>
+                                    </td>
+                                </tr>
+                               @endforeach()
+
+                            </tbody>
+                        </table>
+
+                        {{--View Material on the course page--}}
+                        <div class="modal fade" id="show_material" tabindex="-1" role="dialog"
+                             aria-labelledby="show_material" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    {{-- HEADER--}}
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="showModalLabel">Materials</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    {{-- /HEADER--}}
+
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+        </div>
     </div>
 @endsection
 
