@@ -16,28 +16,29 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |w
 */
-
+//Welcome page
 Route::get('/', [WelcomeController::class,'index'])->name('welcome');
 
 //admin routes file
 Route::prefix('admin')->group(base_path('routes/Admin/admin-routes.php'));
 
-//student routes file
-Route::prefix('student')->group(base_path('routes/Student/student-routes.php'));
+//Student routes file
+Route::middleware(['auth:student','verified'])->group(base_path('routes/Student/student-routes.php'));
 
 
 //TODO
 /*
- * GUEST middleware for admin
  * CSRF for loqout
  * Web Pack
  * ENUM creation for user types
  * TokenBased Auth
  * when doing the admin login from user login page, there is no information about the errors
- * TODO course
- * picture
- * price
- * brief
- * level
  *
  * */
+
+
+//
+////course_purchase
+//id..........................tracnaction forgin key
+//courseid
+//stid

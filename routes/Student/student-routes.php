@@ -10,9 +10,9 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Admin\CourseMaterial;
 use Illuminate\Support\Facades\Route;
 //Student Routes once the Student is logged in.
-Route::group(['middleware' => 'auth:student','verified'], function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+
+Route::get('/dashboard', function () { return view('dashboard');  })->name('dashboard');
+
+
+
 

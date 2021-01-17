@@ -59,10 +59,59 @@
                             </div>
                         </div>
                     </div>
+                    {{-- 2ns row of inputs   --}}
+                    <div class="row">
+                        {{-- Course berief description --}}
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="brief">Short Description</label>
+                                <input type="text" class="form-control" id="brief" name="brief" placeholder="Brief Description"
+                                       required autofocus value="{{old('brief')}}">
+                                @error('brief')
+                                <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
+                                @enderror
+                            </div>
+                        </div>
+                        {{-- level --}}
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="level">Level of the course</label>
+                                <input type="text" class="form-control" id="level" name="level" placeholder="Course Level"
+                                       required autofocus value="{{old('level')}}">
+                                @error('level')
+                                <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
+                                @enderror
+                            </div>
+                        </div>
+                        {{--price--}}
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="price">Course Price</label>
+                                <input type="text" class="form-control" id="price" name="price" placeholder="Price"
+                                       required autofocus value="{{old('price')}}">
+                                @error('price')
+                                <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
+                                @enderror
+                            </div>
+                        </div>
+                        {{-- course_logo --}}
+                        <div class="col-md-3">
 
+                            <div class="form-group">
+                                <label for="course_logo">Logo</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="course_logo" name="course_logo">
+                                    <label class="custom-file-label" for="course_logo">Choose Course Logo</label>
+                                    @error('course_logo')
+                                    <p class="text-red-500 text-xs mt-2 text-danger"> {{$message}} </p>
+                                    @enderror
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
 
-                    {{-- third row of inputs   --}}
+                    {{-- 4th row of inputs  DESCRIPTION --}}
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card card-outline">
@@ -93,9 +142,7 @@
                         <!-- /.col-->
                     </div>
 
-
-
-                    {{-- 4th row of inputs   --}}
+                    {{-- 5th row of inputs Bottons   --}}
                     <div class="row justify-content-center">
                         {{-- bottuns --}}
                         <div class="col-md-4">
@@ -114,6 +161,7 @@
             <div class="card-footer"></div>
         </div>
         <!-- /.row -->
+
         {{-- Table --}}
         <div class="row">
             <div class="col-12">
@@ -136,10 +184,13 @@
                             <thead>
                             <tr>
                                 <th>ID</th>
+                                <th>Logo</th>
                                 <th>Name</th>
                                 <th>Start Date</th>
                                 <th>End Date</th>
                                 <th>Registration Deadline</th>
+                                <th>Level</th>
+                                <th>Price</th>
                                 <th>Material</th>
                                 <th>Exercise</th>
                                 <th>Action</th>
@@ -149,10 +200,18 @@
                             @foreach($courses as $course)
                                 <tr>
                                     <td>{{ $course->id }}</td>
+                                    <td>
+                                        @if($course->course_logo)
+                                            <img src="{{asset('storage/'.$course->course_logo)}}"
+                                                 class="rounded" alt="User Image" width="25">
+                                        @endif
+                                    </td>
                                     <td>{{ $course->name }}</td>
                                     <td>{{ $course->start_date }}</td>
                                     <td>{{ $course->end_date }}</td>
                                     <td>{{ $course->registration_deadline }}</td>
+                                    <td>{{ $course->level }}</td>
+                                    <td>{{ $course->price }}</td>
                                     <td>
                                         <a href="{{route('material', $course->id)}}" class="btn btn-success btn-s">Add</a>
                                         <a href="#" class="btn btn-info btn-s" data-toggle="modal"
