@@ -1,49 +1,120 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.79.0">
-    <title>Album example · Bootstrap v5.0</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+    <title>{{ config('app.name', 'lInGoByTeS') }}</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <!-- Styles -->
+    {{--        //////////////////////////////////////////////////////////--}}
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}">
+    <link rel="stylesheet" href="{{asset('css/owl.theme.css')}}">
+    <link rel="stylesheet" href="{{asset('css/owl.transitions.css')}}">
+    <link rel="stylesheet" href="{{asset('css/meanmenu.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('css/normalize.css')}}">
+    <link rel="stylesheet" href="{{asset('css/jquery.mCustomScrollbar.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/jquery-jvectormap-2.0.3.css')}}">
+    <link rel="stylesheet" href="{{asset('css/notika-custom-icon.css')}}">
+    <link rel="stylesheet" href="{{asset('css/waves.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
+    <script src="{{asset('js/modernizr-2.8.3.min.js')}}"></script>
+    {{--/////////////////////////////////////////////////////////////////--}}
 
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    @livewireStyles
 
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-
-
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.js" defer></script>
 </head>
-<body>
+<body class="font-sans antialiased">
+<div class="min-h-screen bg-gray-100">
+    {{--//////////////////////////////////////////////////////////--}}
+    <nav x-data="{ open: false }" class="header-top-area border-b border-gray-100">
+        <!-- Primary Navigation Menu -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <!-- Logo -->
+                    <!-- Logo -->
+                    <div class="flex-shrink-0 flex items-center">
 
-<header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-    <p class="h5 my-0 me-md-auto fw-normal">LingoBytes</p>
-    <nav class="my-2 my-md-0 me-md-3">
-        <div
-            class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                        <div class="flex-shrink-0 flex items-center">
+                            @auth
+                            <a href="{{ route('dashboard') }}"><x-jet-application-mark class="block h-9 w-auto"/></a>
+                            @else
+                                <x-jet-application-mark class="block h-9 w-auto"/>
+                            @endif
+                        </div>
+                    </div>
+                    <div class="space-x-8  sm:-my-px sm:ml-10 sm:flex inline-flex items-center px-1 pt-1 text-lg">
+                        Lingobytes
+                    </div>
+                </div>
+
+                <!-- Settings Dropdown -->
+                <div class="hidden-xs sm:flex sm:items-center sm:ml-6">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
+                        <x-jet-dropdown align="right" width="48">
+                            <x-slot name="trigger">
+                                @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
+                                    <button
+                                        class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition duration-150 ease-in-out">
+                                        <img class="h-8 w-8 rounded-full object-cover"
+                                             src="{{ Auth::user()->profile_photo_url }}"
+                                             alt="{{ Auth::user()->name }}"/>
+                                    </button>
+                                @else
+                                    <button
+                                        class="flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                                        <div>{{ Auth::user()->name }}</div>
+
+                                        <div class="ml-1">
+                                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd"
+                                                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                      clip-rule="evenodd"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                @endif
+                            </x-slot>
+
+                            <x-slot name="content">
+                                <x-jet-dropdown-link href="{{ route('profile.show') }}">
+                                    {{ __('Profile') }}
+                                </x-jet-dropdown-link>
+
+                                @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
+                                    <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">
+                                        {{ __('API Tokens') }}
+                                    </x-jet-dropdown-link>
+                                @endif
+
+                                <div class="border-t border-gray-100"></div>
+
+
+                                <!-- Authentication -->
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+
+                                    <x-jet-dropdown-link href="{{ route('logout') }}"
+                                                         onclick="event.preventDefault();
+                                                            this.closest('form').submit();">
+                                        {{ __('Logout') }}
+                                    </x-jet-dropdown-link>
+                                </form>
+                            </x-slot>
+                        </x-jet-dropdown>
                     @else
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login |</a>
                         <a href="{{ route('admin-login') }}" class="text-sm text-gray-700 underline">Admin Login</a>
@@ -53,78 +124,223 @@
                     @endif
                 </div>
 
-            @endif
+                <!-- Hamburger -->
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button @click="open = ! open"
+                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex"
+                                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M4 6h16M4 12h16M4 18h16"/>
+                            <path :class="{'hidden': ! open, 'inline-flex': open }" class="hidden"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Responsive Navigation Menu -->
+        <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
+            <div class="pt-4 pb-1 border-t border-gray-200">
+                     <div class="mt-3 space-y-1">
+                    <!-- Account Management -->
+                    <x-jet-responsive-nav-link href="{{ route('admin-login') }}">
+                        {{ __('admin-login') }}
+                    </x-jet-responsive-nav-link>
+
+                         <x-jet-responsive-nav-link href="{{ route('login') }}">
+                             {{ __('login') }}
+                         </x-jet-responsive-nav-link>
+
+                        <x-jet-responsive-nav-link href="{{ route('register')  }}">
+                            {{ __('register') }}
+                        </x-jet-responsive-nav-link>
+                    </form>
+
+                </div>
+            </div>
+
+
+
+{{--            <div class="container">--}}
+{{--                <div class="row">--}}
+{{--              --}}
+{{--                    <ul class="mobile-menu-nav">--}}
+{{--                        <li><a href="{{ route('login') }}" class="text-sm underline">Login </a></li>--}}
+{{--                        <li><a href="{{ route('admin-login') }}" class="text-sm  underline">Admin Login</a></li>--}}
+{{--                        <li>@if (Route::has('register'))--}}
+{{--                                <a href="{{ route('register') }}" class="text-sm underline">Register</a>--}}
+{{--                            @endif</li>--}}
+{{--                    </ul>--}}
+{{--                --}}
+{{--                </div>--}}
+{{--           --}}
+{{--            </div>--}}
 
         </div>
     </nav>
-</header>
+{{--//////////////////////////////////////////////////////////--}}
+<!-- Page Heading -->
 
-<main>
-    <section class="py-2 text-center container">
-        <div class="row py-lg-2">
-            <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">List of Available Courses</h1>
-                <p class="lead text-muted">these are the list of courses available for students</p>
-
-            </div>
-        </div>
-    </section>
-
-    <div class="album py-5 bg-light">
+    <!-- Mobile Menu start -->
+    <div class="mobile-menu-area">
         <div class="container">
-
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center ">
-                @forelse($courses as $course)
-                    <div class="card position-relative ">
-                        <!-- Card image -->
-                        <img class="card-img-top" src="{{asset('storage/'.$course->course_logo)}}" alt="Card image cap">
-
-                        <!-- Card content -->
-                        <div class="card-body text-blue rgba-black-light p-2 position-absolute">
-                            {{$course->name}}
-                        </div>
-
-                        <div class="card-body">
-                            <p class="card-text">{{$course->brief}}.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-lg btn-outline-secondary">Buy</button>
-                                    <small class="text-muted mt-3">{{$course->price}}</small>
-                                </div>
-                                <small class="text-muted">{{$course->created_at->diffForHumans()}}</small>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="mobile-menu">
+                        <nav id="dropdown">
+                            <ul class="mobile-menu-nav">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Courses</a></li>
+                                <li><a href="#">Podcasts</a></li>
+                                <li><a href="#">Help | About us</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                @empty
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This content is a little bit longer.</p>
-
-                            </div>
-                        </div>
-                    </div>
-                @endforelse
-
+                </div>
             </div>
         </div>
     </div>
-</main>
+    <!-- Mobile Menu end -->
 
-<footer class="text-muted py-5">
-    <div class="container">
-        <p class="float-end mb-1">
-            <a href="#">Back to top</a>
-        </p>
-        <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-                href="../getting-started/introduction/">getting started guide</a>.</p>
+    <!-- Main Menu area start-->
+    <div class="main-menu-area mg-tb-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 float-right">
+                    <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+                        <li class="active"><a href="#"><i class="notika-icon notika-house"></i> Home</a>
+                        </li>
+                        <li><a href="#"><i class="notika-icon notika-bar-chart"></i> Courses</a></li>
+                        <li><a href="#"><i class="notika-icon notika-form"></i> Podcasts</a>
+                        </li>
+                        <li><a href="#"><i class="notika-icon notika-support"></i> Help | About us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-</footer>
-<script src="{{asset('js/jquery.js')}}"></script>
-<script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
 
+
+    <!-- Page Content -->
+    <main>
+        {{--        {{ $slot }}--}}
+    </main>
+
+    <!-- Start Footer area-->
+    <div class="footer-copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2018
+                            . All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+@stack('modals')
+
+@livewireScripts
+{{--    ///////////////////////////////////////////////--}}
+
+<script src="{{asset('js/jquery-1.12.4.min.js')}}"></script>
+{{--        to check J q--}}
+<!-- bootstrap JS
+            ============================================ -->
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<!-- wow JS
+    ============================================ -->
+<script src="{{asset('js/wow.min.js')}}"></script>
+<!-- price-slider JS
+    ============================================ -->
+<script src="{{asset('js/jquery-price-slider.js')}}"></script>
+<!-- owl.carousel JS
+    ============================================ -->
+<script src="{{asset('js/owl.carousel.min.js')}}"></script>
+<!-- scrollUp JS
+    ============================================ -->
+<script src="{{asset('js/jquery.scrollUp.min.js')}}"></script>
+<!-- meanmenu JS
+    ============================================ -->
+<script src="{{asset('js/jquery.meanmenu.js')}}"></script>
+<!-- counterup JS
+    ============================================ -->
+<script src="{{asset('js/jquery.counterup.min.js')}}"></script>
+<script src="{{asset('js/waypoints.min.js')}}"></script>
+<script src="{{asset('js/counterup-active.js')}}"></script>
+<!-- mCustomScrollbar JS
+    ============================================ -->
+<script src="{{asset('js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+
+<!-- sparkline JS
+    ============================================ -->
+<script src="{{asset('js/jquery.sparkline.min.js')}}"></script>
+<script src="{{asset('js/sparkline-active.js')}}"></script>
+<!-- sparkline JS
+    ============================================ -->
+<script src="{{asset('js/jquery.flot.js')}}"></script>
+<script src="{{asset('js/jquery.flot.resize.js')}}"></script>
+<script src="{{asset('js/curvedLines.js')}}"></script>
+<script src="{{asset('js/flot-active.js')}}"></script>
+<!-- knob JS
+    ============================================ -->
+<script src="{{asset('js/jquery.knob.js')}}"></script>
+<script src="{{asset('js/jquery.appear.js')}}"></script>
+<script src="{{asset('js/knob-active.js')}}"></script>
+<!--  wave JS
+    ============================================ -->
+<script src="{{asset('js/waves.min.js')}}"></script>
+<script src="{{asset('js/wave-active.js')}}"></script>
+
+<script src="{{asset('js/jquery.todo.js')}}"></script>
+<!-- plugins JS
+    ============================================ -->
+<script src="{{asset('js/plugins.js')}}"></script>
+<!--  Chat JS
+    ============================================ -->
+<script src="{{asset('js/moment.min.js')}}"></script>
+<script src="{{asset('js/jquery.chat.js')}}"></script>
+<!-- main JS
+    ============================================ -->
+<script src="{{asset('js/main.js')}}"></script>
+<!-- tawk chat JS
+    ============================================ -->
+<script src="{{asset('js/tawk-chat.js')}}"></script>
+{{--    ///////////////////////////////////////////////--}}
 </body>
 </html>
+
+
+<div
+    class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+    @if (Route::has('login'))
+        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+            @auth
+                <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
+            @else
+                <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login |</a>
+                <a href="{{ route('admin-login') }}" class="text-sm text-gray-700 underline">Admin Login</a>
+                @if (Route::has('register'))
+                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+                @endif
+            @endif
+        </div>
+
+    @endif
+
+</div>
+{

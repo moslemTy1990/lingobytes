@@ -9,80 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea95ac5-aaac-4217-a9bc-7d6370ca8b09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font/notika-icon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font/notika-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font/notika-icon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font/notika-icon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/notika-icon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/notika-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/notika-icon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/notika-icon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/fonts/summernote.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/jquery-jvectormap-2.0.3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/jquery.mCustomScrollbar.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/meanmenu.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/notika-custom-icon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/owl.theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/owl.transitions.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/waves.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/counterup-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/curvedLines.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/flot-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-1.12.4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-price-slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.appear.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.counterup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.flot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.flot.resize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.knob.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.mCustomScrollbar.concat.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.meanmenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.scrollUp.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.sparkline.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.todo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/knob-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modernizr-2.8.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/plugins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/sparkline-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/tawk-chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wave-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/waves.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/student/courses.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/student/invoice.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_provision" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_provision" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_set_name" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_set_name" afterDir="false" />
@@ -92,7 +23,8 @@
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/Student/student-routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Student/student-routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,24 +186,24 @@
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/student" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\lingobytes\public\css" />
-      <recent name="C:\laragon\www\lingobytes\public\css\font" />
-      <recent name="C:\laragon\www\lingobytes\public\js" />
-      <recent name="C:\laragon\www\lingobytes\routes\Student" />
-      <recent name="C:\laragon\www\lingobytes\public\js\summernote" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\lingobytes\public\css" />
       <recent name="C:\laragon\www\lingobytes\app\Http\Controllers" />
       <recent name="C:\laragon\www\lingobytes\app\Http\Controllers\Admin" />
       <recent name="C:\laragon\www\lingobytes\resources\views\admin\admin-dashboard-pages" />
+      <recent name="C:\laragon\www\lingobytes\public\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\lingobytes\resources\views\student" />
+      <recent name="C:\laragon\www\lingobytes\public\img" />
+      <recent name="C:\laragon\www\lingobytes\public\css" />
+      <recent name="C:\laragon\www\lingobytes\public\css\font" />
       <recent name="C:\laragon\www\lingobytes\public\js" />
     </key>
   </component>
@@ -326,7 +258,8 @@
       <workItem from="1610654979491" duration="5122000" />
       <workItem from="1610815677339" duration="11738000" />
       <workItem from="1610872452920" duration="19243000" />
-      <workItem from="1611496117198" duration="26869000" />
+      <workItem from="1611496117198" duration="27237000" />
+      <workItem from="1612004855787" duration="28326000" />
     </task>
     <task id="LOCAL-00001" summary="Developement 11/14/2020&#10;- initial Migrations are created. &#10;- initial relation between migrations are done">
       <created>1605388403560</created>
@@ -524,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610921282207</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Development 01/25/2021&#10;&#10;- adding order and transaction model and tables&#10;- including the css and js files for FE &amp; Dashboard&#10;- changing the FE of dashboard for users">
+      <created>1611867982433</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1611867982433</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,7 +508,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Developement 11/22/2020&#10;- fixed admin pannel&#10;- fixed Vagrant&#10;- fixed the icone" />
     <MESSAGE value="Developement 11/23/2020&#10;- fixed admin pannel&#10;- fixed Font&#10;- fixed Dashboard js files&#10;--Admin paged completely working as a demo" />
     <MESSAGE value="Developement 11/26/2020&#10;- admin login cridentials&#10;- admin log out and controller" />
     <MESSAGE value="Developement 11/28/2020&#10;- admin login seprated&#10;- student login seprated&#10;- admin login and student login are functioning correctly." />
@@ -593,7 +532,8 @@
     <MESSAGE value="Development 01/05/2021&#10;&#10;- deleting the exam type table and merging with Questions table&#10;- adding the validation for voice input" />
     <MESSAGE value="Development 01/16/2021&#10;&#10;- adding new fields to Course tabel&#10;- adding new route for the students + the prefix&#10;- new frontend for the the student part&#10;- modifying the add-material view&#10;- new welcome controller" />
     <MESSAGE value="Development 01/16/2021&#10;&#10;- deleting payment register table&#10;- modifying the course content and table&#10;- separating student route" />
-    <option name="LAST_COMMIT_MESSAGE" value="Development 01/16/2021&#10;&#10;- deleting payment register table&#10;- modifying the course content and table&#10;- separating student route" />
+    <MESSAGE value="Development 01/25/2021&#10;&#10;- adding order and transaction model and tables&#10;- including the css and js files for FE &amp; Dashboard&#10;- changing the FE of dashboard for users" />
+    <option name="LAST_COMMIT_MESSAGE" value="Development 01/25/2021&#10;&#10;- adding order and transaction model and tables&#10;- including the css and js files for FE &amp; Dashboard&#10;- changing the FE of dashboard for users" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1241" y="842" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607372291438">
@@ -605,10 +545,10 @@
     </state>
     <state x="-1230" y="795" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1610905910878" />
     <state x="460" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606418832337" />
-    <state x="-1335" y="522" key="CommitChangelistDialog2" timestamp="1610921281544">
+    <state x="-1335" y="522" key="CommitChangelistDialog2" timestamp="1611867981656">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1335" y="522" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1610921281544" />
+    <state x="-1335" y="522" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1611867981656" />
     <state x="390" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607855807320" />
     <state x="422" y="95" key="FileChooserDialogImpl" timestamp="1607855925909">
       <screen x="0" y="0" width="1280" height="680" />
@@ -678,10 +618,10 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1646" y="636" width="1202" height="832" key="SettingsEditor/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609014402885" />
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1610921354049">
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1611868059088">
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1610921354049" />
+    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1611868059088" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607855901591" />
     <state x="411" y="148" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1606578986989">
       <screen x="0" y="0" width="1280" height="680" />
@@ -707,11 +647,11 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1304" y="501" key="run.anything.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1610575636763" />
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup" timestamp="1611850588077">
-      <screen x="-1920" y="522" width="1920" height="1040" />
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1612114326064">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1611850588077" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1607856823494" />
+    <state x="-1297" y="747" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1612091330475" />
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1612114326064" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -720,6 +660,11 @@
           <url>file://$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php</url>
           <line>4</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php</url>
+          <line>89</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
