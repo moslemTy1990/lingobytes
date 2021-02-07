@@ -9,21 +9,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea95ac5-aaac-4217-a9bc-7d6370ca8b09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/student/courses.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/student/invoice.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/student/class.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_provision" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_provision" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_set_name" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/action_set_name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/id" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/id" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/index_uuid" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/index_uuid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/private_key" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/lingobytes/virtualbox/private_key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CourseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Student/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Student/CourseController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/student/courses.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/student/courses.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/Student/student-routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/Student/student-routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -259,7 +255,10 @@
       <workItem from="1610815677339" duration="11738000" />
       <workItem from="1610872452920" duration="19243000" />
       <workItem from="1611496117198" duration="27237000" />
-      <workItem from="1612004855787" duration="28326000" />
+      <workItem from="1612004855787" duration="30412000" />
+      <workItem from="1612298158766" duration="1252000" />
+      <workItem from="1612388783719" duration="1514000" />
+      <workItem from="1612710422371" duration="2289000" />
     </task>
     <task id="LOCAL-00001" summary="Developement 11/14/2020&#10;- initial Migrations are created. &#10;- initial relation between migrations are done">
       <created>1605388403560</created>
@@ -464,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611867982433</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Development 01/31/2021&#10;&#10;- Course controller for students&#10;- Invoice controller for students&#10;- app layout modifications&#10;- Course Blade&#10;- invoice blade&#10;- modification of the navigation dropdown,&#10;- creating new welcome blade">
+      <created>1612123775776</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1612123775777</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +514,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Developement 11/23/2020&#10;- fixed admin pannel&#10;- fixed Font&#10;- fixed Dashboard js files&#10;--Admin paged completely working as a demo" />
     <MESSAGE value="Developement 11/26/2020&#10;- admin login cridentials&#10;- admin log out and controller" />
     <MESSAGE value="Developement 11/28/2020&#10;- admin login seprated&#10;- student login seprated&#10;- admin login and student login are functioning correctly." />
     <MESSAGE value="Developement 11/29/2020&#10;- seprated diffrent pards of the admin part in seprate files to be more organized." />
@@ -533,7 +538,8 @@
     <MESSAGE value="Development 01/16/2021&#10;&#10;- adding new fields to Course tabel&#10;- adding new route for the students + the prefix&#10;- new frontend for the the student part&#10;- modifying the add-material view&#10;- new welcome controller" />
     <MESSAGE value="Development 01/16/2021&#10;&#10;- deleting payment register table&#10;- modifying the course content and table&#10;- separating student route" />
     <MESSAGE value="Development 01/25/2021&#10;&#10;- adding order and transaction model and tables&#10;- including the css and js files for FE &amp; Dashboard&#10;- changing the FE of dashboard for users" />
-    <option name="LAST_COMMIT_MESSAGE" value="Development 01/25/2021&#10;&#10;- adding order and transaction model and tables&#10;- including the css and js files for FE &amp; Dashboard&#10;- changing the FE of dashboard for users" />
+    <MESSAGE value="Development 01/31/2021&#10;&#10;- Course controller for students&#10;- Invoice controller for students&#10;- app layout modifications&#10;- Course Blade&#10;- invoice blade&#10;- modification of the navigation dropdown,&#10;- creating new welcome blade" />
+    <option name="LAST_COMMIT_MESSAGE" value="Development 01/31/2021&#10;&#10;- Course controller for students&#10;- Invoice controller for students&#10;- app layout modifications&#10;- Course Blade&#10;- invoice blade&#10;- modification of the navigation dropdown,&#10;- creating new welcome blade" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1241" y="842" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607372291438">
@@ -545,10 +551,11 @@
     </state>
     <state x="-1230" y="795" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1610905910878" />
     <state x="460" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606418832337" />
-    <state x="-1335" y="522" key="CommitChangelistDialog2" timestamp="1611867981656">
-      <screen x="-1920" y="522" width="1920" height="1040" />
+    <state x="390" y="0" key="CommitChangelistDialog2" timestamp="1612123775022">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="-1335" y="522" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1611867981656" />
+    <state x="390" y="0" key="CommitChangelistDialog2/0.0.1280.680/-1920.522.1920.1040@0.0.1280.680" timestamp="1612123775022" />
     <state x="390" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607855807320" />
     <state x="422" y="95" key="FileChooserDialogImpl" timestamp="1607855925909">
       <screen x="0" y="0" width="1280" height="680" />
@@ -618,10 +625,11 @@
       <screen x="-1920" y="522" width="1920" height="1040" />
     </state>
     <state x="-1646" y="636" width="1202" height="832" key="SettingsEditor/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1609014402885" />
-    <state x="-1368" y="773" key="Vcs.Push.Dialog.v2" timestamp="1611868059088">
-      <screen x="-1920" y="522" width="1920" height="1040" />
+    <state x="368" y="147" key="Vcs.Push.Dialog.v2" timestamp="1612123798602">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="-1368" y="773" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@-1920.522.1920.1040" timestamp="1611868059088" />
+    <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.522.1920.1040@0.0.1280.680" timestamp="1612123798602" />
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607855901591" />
     <state x="411" y="148" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1606578986989">
       <screen x="0" y="0" width="1280" height="680" />

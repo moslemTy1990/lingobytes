@@ -31,9 +31,12 @@ class CourseController extends Controller {
                 'description'=>['required']
             ]);
         $path = null;
-        if($validated['course_logo'] && request('course_logo')){
-            $validated['course_logo']  = Storage::disk('public')->put('logos',$validated['course_logo']);
+        if(isset($validated['course_logo']) && isset($request['course_logo']))
+        {
+            $validated['course_logo'] = Storage::disk('public')->put('logos', $validated['course_logo']);
+
         }
+        // TODO a buy here while doing a save wh the image
          auth()->guard('web')->user()->courses()->create($validated);
          return back();
     }

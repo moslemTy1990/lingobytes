@@ -132,7 +132,7 @@
                     <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
                         <li class="{{ Route::IS('dashboard') ? 'active' : ''}}"><a href="{{route('dashboard')}}"><i class="notika-icon notika-house"></i> Dashboard</a>
                         </li>
-                        <li><a data-toggle="tab" href="#Tables"><i class="notika-icon notika-windows"></i> Class</a>
+                        <li class="{{ Route::IS('student.class') ? 'active' : ''}}"><a data-toggle="tab" href="#Tables"><i class="notika-icon notika-windows"></i> Class</a>
                         </li>
                         <li class="{{ Route::IS('student.cart') ? 'active' : ''}}"><a data-toggle="tab" href="#Interface"><i class="notika-icon notika-edit"></i> invoice</a>
                         </li>
@@ -188,9 +188,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div id="Tables" class="tab-pane notika-tab-menu-bg animated flipInX">
+                        <div id="Tables" class="tab-pane notika-tab-menu-bg animated flipInX {{ Route::IS('student.class') ? 'in active' : ''}}">
                             <ul class="notika-main-menu-dropdown">
-                                <li><a href="normal-table.html">Ongoing Classes</a>
+                                <li><a href="{{route('student.class')}}">Ongoing Classes</a>
                                 </li>
                                 <li><a href="data-table.html">Tests</a>
                                 </li>
