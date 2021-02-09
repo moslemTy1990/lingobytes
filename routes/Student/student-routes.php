@@ -2,9 +2,9 @@
 
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Student\CartController;
 use App\Http\Controllers\Student\ClassController;
 use App\Http\Controllers\Student\CourseController;
-use App\Http\Controllers\Student\InvoiceController;
 use Illuminate\Support\Facades\Route;
 //Student Routes once the Student is logged in.
 
@@ -12,6 +12,14 @@ Route::get('/dashboard', function () { return view('dashboard');  })->name('dash
 
 
 Route::get('/courses', [CourseController::class , 'index'])->name('student.courses');
-Route::get('/cart', [InvoiceController::class , 'index'])->name('student.cart');
+
+
+
+Route::get('/order', [CartController::class , 'index'])->name('student.order');
+Route::post('/order/{course}', [CartController::class,'store'])->name('order.course');
+
 
 Route::get('/classes', [ClassController::class , 'index'])->name('student.class');
+
+
+

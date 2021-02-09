@@ -5,6 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class Course
+ *
+ * @package App\Models
+ */
 class Course extends Model
 {
     use HasFactory;
@@ -18,6 +23,22 @@ class Course extends Model
     public function questions()
     {
         return $this->hasMany(Question::class);
+    }
+
+    public function students()
+    {
+        return $this->belongsToMany(Student::class);
+    }
+
+    public function order()
+    {
+        return $this->belongsTo(Order::class);
+    }
+
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 
 

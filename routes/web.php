@@ -22,6 +22,7 @@ Route::get('/', [WelcomeController::class,'index'])->name('welcome');
 //admin routes file
 Route::prefix('admin')->group(base_path('routes/Admin/admin-routes.php'));
 
+
 //Student routes file
 Route::middleware(['auth:student','verified'])->group(base_path('routes/Student/student-routes.php'));
 

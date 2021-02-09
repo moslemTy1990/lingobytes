@@ -26,4 +26,13 @@ class Student extends Authenticatable {
         'age',
         'status',
     ];
+
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
+    public function courses()
+    {
+        return $this->hasMany(Course::class);
+    }
 }

@@ -245,9 +245,9 @@
 
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <div class="animation-btn">
-                                        <button class="btn bg-info btn-reco-mg btn-button-mg">Buy</button>
-                                    </div>
+                                    <form action="" method="POST">
+                                        <button class="btn bg-info btn-reco-mg btn-button-mg">Order</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>

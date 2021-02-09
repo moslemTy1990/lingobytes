@@ -3,13 +3,18 @@
 namespace App\Http\Controllers\Student;
 
 use App\Http\Controllers\Controller;
+use App\Models\Course;
 use Illuminate\Http\Request;
 
-class InvoiceController extends Controller
+class CartController extends Controller
 {
-
     public function index()
     {
-        return view('student.invoice');
+        return view('student.cart');
+    }
+
+    public function store(Course $course)
+    {
+
     }
 }
