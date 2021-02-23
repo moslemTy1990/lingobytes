@@ -15,8 +15,8 @@ Route::get('/courses', [CourseController::class , 'index'])->name('student.cours
 
 
 
-Route::get('/order', [CartController::class , 'index'])->name('student.order');
-Route::post('/order/{course}', [CartController::class,'store'])->name('order.course');
+Route::get('/cart', [CartController::class , 'index'])->name('student.cart');
+Route::post('/cart/{course}', [CartController::class,'store'])->name('cart.course');
 
 
 Route::get('/classes', [ClassController::class , 'index'])->name('student.class');

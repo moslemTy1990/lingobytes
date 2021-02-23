@@ -3,7 +3,6 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Jetstream\HasProfilePhoto;
@@ -27,9 +26,9 @@ class Student extends Authenticatable {
         'status',
     ];
 
-    public function orders()
+    public function carts()
     {
-        return $this->hasMany(Order::class);
+        return $this->hasMany(Cart::class);
     }
     public function courses()
     {

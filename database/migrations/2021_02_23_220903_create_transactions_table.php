@@ -14,14 +14,16 @@ class CreateTransactionsTable extends Migration
     public function up()
     {
         Schema::create('transactions', function (Blueprint $table) {
+
             $table->id();
-            $table->foreignId('order_id');
+            $table->foreignId('cart_id');
             $table->enum('status',['failed','successful']);
             $table->string('card_number', 30);
             $table->string('reference_id');
             $table->timestamps();
 
-            $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
+            $table->foreign('cart_id')->references('id')->on('carts')->onDelete('cascade');
+
         });
     }
 

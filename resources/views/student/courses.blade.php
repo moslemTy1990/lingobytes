@@ -25,9 +25,9 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="animation-btn">
-                                    <form action="{{route('order.course',$course->id)}}" method="POST">
+                                    <form action="{{route('cart.course',$course->id)}}" method="POST">
                                         @csrf
-                                        <button class="btn bg-info btn-reco-mg btn-button-mg">Order</button>
+                                        <button class="btn bg-info btn-reco-mg btn-button-mg">Add to Cart</button>
                                     </form>
                                 </div>
                             </div>

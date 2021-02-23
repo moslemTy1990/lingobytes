@@ -134,7 +134,7 @@
                         </li>
                         <li class="{{ Route::IS('student.class') ? 'active' : ''}}"><a data-toggle="tab" href="#Tables"><i class="notika-icon notika-windows"></i> Class</a>
                         </li>
-                        <li class="{{ Route::IS('student.order') ? 'active' : ''}}"><a data-toggle="tab" href="#Interface"><i class="notika-icon notika-edit"></i> invoice</a>
+                        <li class="{{ Route::IS('student.cart') ? 'active' : ''}}"><a data-toggle="tab" href="#Interface"><i class="notika-icon notika-edit"></i> invoice</a>
                         </li>
                         <li class="{{ Route::IS('student.courses') ? 'active' : ''}}"><a data-toggle="tab" href="#Charts"><i class="notika-icon notika-bar-chart"></i> Courses</a>
                         </li>
@@ -168,9 +168,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div id="Interface" class="tab-pane notika-tab-menu-bg animated flipInX {{ Route::IS('student.order') ? 'in active' : ''}}">
+                        <div id="Interface" class="tab-pane notika-tab-menu-bg animated flipInX {{ Route::IS('student.cart') ? 'in active' : ''}}">
                             <ul class="notika-main-menu-dropdown">
-                                <li><a href="{{route('student.order')}}">Order</a> </li>
+                                <li><a href="{{route('student.cart')}}">Cart</a> </li>
                                 <li><a href="data-map.html">successful Transactions</a>
                                 </li>
                                 <li><a href="code-editor.html">Failed Transactions</a>

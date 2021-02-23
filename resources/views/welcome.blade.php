@@ -246,7 +246,7 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <form action="" method="POST">
-                                        <button class="btn bg-info btn-reco-mg btn-button-mg">Order</button>
+                                        <button class="btn bg-info btn-reco-mg btn-button-mg">Add To Cart</button>
                                     </form>
                                 </div>
                             </div>
